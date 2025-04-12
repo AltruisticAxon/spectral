@@ -3997,10 +3997,12 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+#banner .inner p, 
 #banner .inner p a {
-	font-family: 'Courier New', monospace; /* ← change to your desired font */
+	text-transform: none !important;
+	font-family: 'Courier New', monospace;
 	font-size: 1em;
 	font-weight: 400;
-	text-transform: none; /* Ensures lowercase stays lowercase */
 	letter-spacing: normal;
 }
+
