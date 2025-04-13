@@ -1926,7 +1926,7 @@ input, select, textarea {
 				font-variant: normal;
 				text-rendering: auto;
 				line-height: 1;
-				text-transform: none !important;
+				text-transform: none ;
 				font-family: 'Font Awesome 5 Free';
 				font-weight: 900;
 			}
@@ -2024,7 +2024,7 @@ input, select, textarea {
 			font-variant: normal;
 			text-rendering: auto;
 			line-height: 1;
-			text-transform: none !important;
+			text-transform: none ;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
 		}
@@ -3999,7 +3999,7 @@ input, select, textarea {
 	}
 #banner .inner p, 
 #banner .inner p a {
-	text-transform: none !important;
+	text-transform: none ;
 	font-family: 'Courier New', monospace;
 	font-size: 1em;
 	font-weight: 400;
