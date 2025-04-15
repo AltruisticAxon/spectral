@@ -4008,6 +4008,11 @@ input, select, textarea {
 /* Reduce vertical size for the "About Site" section */
 #about-site {
     padding: 20px 10px !important; /* Compress the inner spacing */
+    margin: 0 auto !important; /* Remove extra spacing */
+}
+
+#about-site {
+    padding: 20px 10px !important; /* Compress the inner spacing */
     margin: 0 auto !important; /* Ensure it's centered with no extra spacing */
 }
 
