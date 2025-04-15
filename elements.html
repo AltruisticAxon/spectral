@@ -29,37 +29,75 @@
           </ul>
         </nav>
       </header>
+
       <!-- Main -->
       <article id="main">
         <header>
           <h2>Resume</h2>
           <p>Click below to view or download my Resume</p>
         </header>
-        <!-- Resume Section -->
-        <section id="resume" class="wrapper style3 special">
+
+        <!-- Resume Section with Transparent Blue Overlay -->
+        <section id="resume" class="wrapper style3 special" style="
+          background: linear-gradient(rgba(10,25,51,0.5), rgba(10,25,51,0.5)), url('assets/images/banner.jpg') no-repeat center center/cover !important;
+          text-align: center !important;
+          display: flex !important;
+          flex-direction: column !important;
+          justify-content: center !important;
+          align-items: center !important;
+          padding: 50px 20px !important;
+          margin-bottom: 0 !important;
+          border: none !important;
+          height: 100vh !important;
+        ">
           <div class="inner">
-            <header class="major">
-              <h2>Resume</h2>
-              <p>Click below to view or download my Resume</p>
+            <header class="major" style="margin-bottom: 10px !important;">
+              <h2 style="color: #f0f8ff !important;">Resume</h2>
+              <p style="color: #f0f8ff !important;">Click below to view or download my Resume</p>
             </header>
-            <!-- Buttons -->
+            <!-- Buttons for View & Download -->
             <div class="actions">
-              <a href="assets/pdf/kevin-cardone-resume.pdf" target="_blank" class="button primary">View CV</a>
-              <a href="assets/pdf/kevin-cardone-resume.pdf" download class="button">Download CV</a>
+              <a href="assets/pdf/kevin-cardone-resume.pdf" target="_blank" class="button primary" style="
+                background: #fff !important;
+                color: #0a1933 !important;
+                padding: 12px 25px !important;
+                margin: 10px 5px !important;
+                font-size: 1rem !important;
+                border-radius: 4px !important;
+                text-decoration: none !important;
+              ">View CV</a>
+              <a href="assets/pdf/kevin-cardone-resume.pdf" download class="button" style="
+                background: #fff !important;
+                color: #0a1933 !important;
+                padding: 12px 25px !important;
+                margin: 10px 5px !important;
+                font-size: 1rem !important;
+                border-radius: 4px !important;
+                text-decoration: none !important;
+              ">Download CV</a>
             </div>
           </div>
         </section>
+
         <!-- "About Site" Section -->
-        <section id="about-site-custom" class="wrapper style2 special" style="margin-top: 0 !important; padding-top: 0 !important; border: none !important;">
+        <section id="about-site-custom" class="wrapper style2 special" style="
+          margin-top: 0 !important;
+          padding-top: 0 !important;
+          border: none !important;
+        ">
           <div class="inner">
             <header class="major" style="margin-bottom: 10px !important;">
               <h2>About Site</h2>
             </header>
             <p>Kevin Cardone is an HR Master graduate with an undergraduate degree in Business Management. With extensive experience as an HR Officer and specialist in recruitment, Kevin has a proven track record in supporting organizational growth and talent development.</p>
-            <p>Learn more about Kevin, his expertise in HR and recruitment, and his approach to fostering professional growth. If you're ready to discuss your personal or business needs, reach out via email at <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a> or by using <a href="#">this contact form</a>.</p>
+            <p>Learn more about Kevin, his expertise in HR and recruitment, and his approach to fostering professional growth. If you're ready to discuss your personal or business needs, reach out via email at 
+              <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a> or by using 
+              <a href="#">this contact form</a>.
+            </p>
           </div>
         </section>
       </article>
+
       <!-- Footer -->
       <footer id="footer">
         <ul class="icons">
@@ -75,6 +113,7 @@
         </ul>
       </footer>
     </div>
+
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
