@@ -4138,3 +4138,8 @@ body, html {
     padding-top: 10px !important; /* Add subtle spacing for cleaner look */
 }
 
+/* Fix the top margin of the "About Site" section */
+#about-site-custom {
+    margin-top: -10px !important; /* Reduce gap by pulling it closer to the previous section */
+    padding-top: 10px !important; /* Add subtle padding for clean alignment */
+}
