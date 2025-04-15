@@ -24,6 +24,32 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
+/* --- Resume Section Overrides --- */
+#resume.wrapper.style3.special {
+  background: linear-gradient(rgba(10,25,51,0.5), rgba(10,25,51,0.5)) , url('assets/images/banner.jpg') no-repeat center center/cover !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 50px 20px !important;
+  margin-bottom: 0 !important;
+  border: none !important;
+  height: 100vh !important;
+  color: #f0f8ff !important;
+}
+
+/* --- Resume Section Buttons Overrides --- */
+#resume .actions .button {
+  background: #fff !important;
+  color: #0a1933 !important;
+  padding: 12px 25px !important;
+  margin: 10px 5px !important;
+  font-size: 1rem !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+}
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -4190,3 +4216,28 @@ body, html {
   text-decoration: none !important;
 }
 
+/* --- Resume Section Overrides --- */
+#resume.wrapper.style3.special {
+  background: linear-gradient(rgba(10,25,51,0.5), rgba(10,25,51,0.5)) , url('assets/images/banner.jpg') no-repeat center center/cover !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 50px 20px !important;
+  margin-bottom: 0 !important;
+  border: none !important;
+  height: 100vh !important;
+  color: #f0f8ff !important;
+}
+
+/* --- Resume Section Buttons Overrides --- */
+#resume .actions .button {
+  background: #fff !important;
+  color: #0a1933 !important;
+  padding: 12px 25px !important;
+  margin: 10px 5px !important;
+  font-size: 1rem !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+}
