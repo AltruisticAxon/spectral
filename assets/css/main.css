@@ -4128,4 +4128,8 @@ body, html {
     margin-top: 0 !important; /* Ensure no margin above "About Site" */
     padding-top: 0 !important; /* Remove extra padding at the top */
 }
+#about-site-custom {
+    margin-top: 0 !important; /* Remove top margin */
+    padding-top: 10px !important; /* Add subtle padding */
+}
 
