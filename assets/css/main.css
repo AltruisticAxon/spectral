@@ -4005,26 +4005,4 @@ input, select, textarea {
 	font-weight: 400;
 	letter-spacing: normal;
 }
-/* Reduce vertical size for the "About Site" section */
-#about-site {
-    padding: 20px 10px !important; /* Compress the inner spacing */
-    margin: 0 auto !important; /* Remove extra spacing */
-}
-
-#about-site {
-    padding: 20px 10px !important; /* Compress the inner spacing */
-    margin: 0 auto !important; /* Ensure it's centered with no extra spacing */
-}
-
-#about-site .inner {
-    max-width: 800px; /* Optional: Reduce content width for a compact look */
-}
-
-#about-site .inner p {
-    margin: 5px 0 !important; /* Tighten spacing between paragraphs */
-}
-
-#about-site .inner h2 {
-    margin-bottom: 10px !important; /* Reduce space below the header */
-}
 
