@@ -4025,5 +4025,35 @@ input, select, textarea {
     margin-bottom: 20px !important; /* Comfortable spacing below heading */
     font-size: 1.75rem !important; /* Appropriate heading size */
 }
+/* Override styles influencing the "About Me" page */
+
+/* Ensure enough space for the wrapper containing the content */
+.wrapper.style5 {
+    min-height: 1200px !important; /* Extend the height to fit all content */
+    overflow: auto !important; /* Prevent text from spilling out */
+    padding-bottom: 50px !important; /* Add spacing at the bottom */
+}
+
+/* Separate the "About Site" section from previous content */
+#about-site-custom {
+    margin-top: 100px !important; /* Clear separation from previous sections */
+    padding: 30px 15px !important; /* Compact and clean padding */
+}
+
+/* Clear floats and ensure proper stacking */
+.inner {
+    clear: both !important; /* Prevent overlapping */
+}
+
+/* Debug potential overlaps caused by global settings */
+body, html {
+    overflow-y: visible !important; /* Ensure vertical scroll is allowed */
+    scroll-behavior: smooth !important; /* Optional: Make scrolling smoother */
+}
+
+/* Additional margin adjustment for lists if needed */
+.wrapper.style5 ul {
+    margin-bottom: 50px !important; /* Ensure no overlap with "About Site" section */
+}
 
 
