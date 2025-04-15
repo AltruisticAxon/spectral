@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <title>Resume - Kevin Cardone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- You can link to your main CSS here if needed -->
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
     <style>
       /* Reset & Base Styles */
       * {
@@ -11,54 +13,76 @@
         padding: 0;
         box-sizing: border-box;
       }
-      
-      body {
-        font-family: Arial, sans-serif;
-        background: url('assets/images/banner.jpg') no-repeat center center/cover;
-        color: #f0f8ff;
-        line-height: 1.6;
-        /* Ensure content is visible over the background */
-        position: relative;
-        min-height: 100vh;
-      }
-      
-      /* Blue transparent overlay */
-      .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
+      body, html {
         width: 100%;
         height: 100%;
-        background: rgba(10, 25, 51, 0.6);
-        z-index: -1;
+        font-family: Arial, sans-serif;
+      }
+      a {
+        text-decoration: none;
       }
       
-      /* Container to center content */
-      .container {
-        max-width: 800px;
-        margin: auto;
-        padding: 50px 20px;
+      /* Header & Menu */
+      header#header {
+        background: rgba(10,25,51,0.9);
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        color: #fff;
+      }
+      header#header h1 {
+        display: inline-block;
+        font-size: 1.8rem;
+        margin: 0;
+      }
+      header#header h1 a {
+        color: #fff;
+      }
+      nav#nav {
+        display: inline-block;
+        float: right;
+      }
+      nav#nav ul {
+        list-style: none;
+      }
+      nav#nav ul li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      nav#nav ul li a {
+        color: #fff;
+        font-size: 1rem;
+      }
+      
+      /* Resume Section */
+      .resume-section {
+        background: 
+          linear-gradient(rgba(10,25,51,0.5), rgba(10,25,51,0.5)),
+          url('assets/images/banner.jpg') no-repeat center center/cover;
+        padding-top: 120px; /* Offset for the fixed header */
+        padding-bottom: 50px;
+        min-height: calc(100vh - 120px);
         text-align: center;
+        color: #f0f8ff;
       }
-      
-      h1 {
+      .resume-section h1 {
         font-size: 3rem;
         margin-bottom: 20px;
       }
-      
-      p.subtitle {
+      .resume-section p.subtitle {
         font-size: 1.2rem;
         margin-bottom: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
       }
-      
-      /* Button styles */
       .buttons {
         margin-top: 30px;
       }
-      
       .button {
         display: inline-block;
-        text-decoration: none;
         background-color: #fff;
         color: #0a1933;
         padding: 15px 30px;
@@ -68,41 +92,110 @@
         font-weight: bold;
         transition: background-color 0.3s ease;
       }
-      
       .button:hover {
         background-color: #f0f8ff;
       }
       
+      /* About Site Section */
+      .about-site {
+        background: #fff;
+        color: #333;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .about-site h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      .about-site p {
+        font-size: 1rem;
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.6;
+      }
+      
+      /* Footer with Social Media */
+      footer {
+        background: #0a1933;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      footer .icons {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+      }
+      footer .icons li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      footer .icons li a {
+        color: #fff;
+        font-size: 1.5rem;
+      }
+      footer p {
+        font-size: 0.9rem;
+      }
       /* Responsive Adjustments */
       @media (max-width: 600px) {
-        h1 {
-          font-size: 2.5rem;
-        }
-        p.subtitle {
-          font-size: 1rem;
-        }
-        .button {
-          padding: 12px 20px;
-          font-size: 0.9rem;
-          margin: 10px 10px;
-        }
+        header#header h1 { font-size: 1.6rem; }
+        nav#nav ul li a { font-size: 0.9rem; }
+        .resume-section h1 { font-size: 2.5rem; }
+        .resume-section p.subtitle { font-size: 1rem; }
+        .button { padding: 12px 20px; font-size: 0.9rem; }
       }
     </style>
   </head>
   <body>
-    <!-- Overlay Div for the transparent blue layer -->
-    <div class="overlay"></div>
-    
-    <div class="container">
+    <!-- Header with Menu -->
+    <header id="header">
+      <h1><a href="index.html">Kevin Cardone</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="generic.html">About me</a></li>
+          <li><a href="elements.html">Resume</a></li>
+          <li><a href="#">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Resume Section with Blue Transparent Overlay -->
+    <section class="resume-section">
       <h1>Resume</h1>
       <p class="subtitle">
         If you are a potential employer or are interested in developing a business project with me, please feel free to view or download my resume as to better evaluate whether I would be a good fit for your business or project idea.
       </p>
-      
       <div class="buttons">
         <a href="assets/pdf/resume.pdf" target="_blank" class="button">View CV</a>
         <a href="assets/pdf/resume.pdf" download class="button">Download CV</a>
       </div>
-    </div>
+    </section>
+
+    <!-- About Site Section -->
+    <section class="about-site">
+      <h2>About Site</h2>
+      <p>
+        This website was built by Kevin Cardone, an HR Specialist and Systems Architect passionate about innovative people management and business transformation. Discover more about my journey, my expertise, and the philosophy behind this site.
+      </p>
+    </section>
+
+    <!-- Footer with Social Media -->
+    <footer>
+      <ul class="icons">
+        <li><a href="https://twitter.com/yourprofile" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://facebook.com/yourprofile" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+        <li><a href="https://instagram.com/yourprofile" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://dribbble.com/yourprofile" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+        <li><a href="mailto:kevincardone99@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+      <p>
+        &copy; 2025 Kevin Cardone - All Rights Reserved. | <a href="http://html5up.net" target="_blank" style="color: #fff; text-decoration: none;">Contact me</a>
+      </p>
+    </footer>
+
+    <!-- Font Awesome for Social Media Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </body>
 </html>
