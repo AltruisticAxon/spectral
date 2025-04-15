@@ -4096,3 +4096,25 @@ body, html {
     margin: 0 auto !important; /* Center the content */
     padding: 20px !important; /* Padding for the inner content */
 }
+/* Ultimate CSS Override for #three */
+#three {
+    background-color: rgba(10, 25, 51, 0.9) !important; /* Dark blue with 90% opacity */
+    color: #f5f5f5 !important; /* Light text for strong contrast */
+    padding: 50px 20px !important; /* Consistent spacing inside the section */
+    margin: 0 !important; /* Remove any extra margins */
+    border: none !important; /* Clear any borders */
+    box-shadow: none !important; /* Clear any shadow effects */
+}
+
+/* Text inside the section */
+#three h2, #three h3, #three p, #three li {
+    color: #f5f5f5 !important; /* Light grey text for readability */
+    text-shadow: none !important; /* Ensure no shadows make the text less readable */
+}
+
+/* Optional layout adjustments */
+#three .inner {
+    max-width: 100% !important; /* Ensure inner content fills the available space */
+    margin: 0 auto !important; /* Center the content */
+    padding: 20px !important; /* Inner spacing */
+}
