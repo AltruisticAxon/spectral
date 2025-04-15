@@ -4056,4 +4056,11 @@ body, html {
     margin-bottom: 50px !important; /* Ensure no overlap with "About Site" section */
 }
 
+#three {
+    margin-bottom: 0 !important; /* Remove bottom gap for HR section */
+}
+
+#about-site-custom {
+    margin-top: 0 !important; /* Remove top gap for "About Site" section */
+}
 
