@@ -4132,4 +4132,9 @@ body, html {
     margin-top: 0 !important; /* Remove top margin */
     padding-top: 10px !important; /* Add subtle padding */
 }
+/* Fix for the top margin of the "About Site" section */
+#about-site-custom {
+    margin-top: 0 !important; /* Remove the excess margin above */
+    padding-top: 10px !important; /* Add subtle spacing for cleaner look */
+}
 
