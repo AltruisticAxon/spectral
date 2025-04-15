@@ -157,6 +157,23 @@
         });
     });
 </script>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetElement = document.querySelector(this.getAttribute('href'));
+            
+            if (!targetElement) return; // Ensure the target exists
+
+            // Scroll immediately without delay
+            const targetPosition = targetElement.offsetTop;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth' // Smooth scrolling for UX
+            });
+        });
+    });
+</script>
 
 
     </body>
