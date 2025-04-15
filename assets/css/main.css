@@ -4183,4 +4183,20 @@ body, html {
     font-size: 1rem !important; /* Maintain readable text size */
     border-radius: 5px !important; /* Add rounded corners for better aesthetics */
 }
+/* Style3 (Dark Transparent Background) */
+.wrapper.style3 {
+    background-color: rgba(10, 25, 51, 0.85) !important; /* Dark transparent blue */
+    background-image: url('assets/images/banner.jpg') !important; /* Background image */
+    background-size: cover !important; /* Make image cover the section */
+    background-blend-mode: overlay !important; /* Combine image and overlay */
+    color: #f0f8ff !important; /* Light text color for contrast */
+}
+
+/* Centering and spacing for 'special' sections */
+.wrapper.special {
+    text-align: center !important;
+    padding: 50px 20px !important;
+    margin-bottom: 0 !important;
+    border: none !important;
+}
 
