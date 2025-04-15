@@ -4143,3 +4143,23 @@ body, html {
     margin-top: -10px !important; /* Reduce gap by pulling it closer to the previous section */
     padding-top: 10px !important; /* Add subtle padding for clean alignment */
 }
+/* Resume Section Styling */
+#resume {
+    background-color: rgba(10, 25, 51, 0.85); /* Dark blue transparent background */
+    text-align: center; /* Center text content */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Occupy full viewport height */
+    margin-top: 0; /* Remove excess margin */
+    padding: 20px; /* Add space inside the section */
+}
+
+/* Button Styling */
+#resume .actions .button {
+    margin: 10px 0; /* Add spacing between buttons */
+    padding: 15px 25px; /* Adjust button padding for a balanced look */
+    font-size: 1rem; /* Ensure buttons have readable text size */
+    border-radius: 5px; /* Add rounded corners */
+}
