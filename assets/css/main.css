@@ -4005,4 +4005,25 @@ input, select, textarea {
 	font-weight: 400;
 	letter-spacing: normal;
 }
+/* Custom styling for the About Site section */
+#about-site-custom {
+    padding: 30px 15px !important; /* Reduce inner padding for compact layout */
+    margin: 0 auto !important; /* Remove extra spacing around the section */
+    background-color: #f8f9fa !important; /* Optional: Change background for visibility */
+}
+
+#about-site-custom .inner {
+    max-width: 800px !important; /* Limit content width for better readability */
+    text-align: center !important; /* Center-align text for aesthetics */
+}
+
+#about-site-custom .inner p {
+    margin-bottom: 25px !important; /* Add breathing room between paragraphs */
+    line-height: 1.6 !important; /* Improve text readability */
+}
+
+#about-site-custom .inner h2 {
+    margin-bottom: 20px !important; /* Adjust space below the heading */
+    font-size: 1.75rem !important; /* Optional: Adjust font size for the header */
+}
 
