@@ -4143,60 +4143,23 @@ body, html {
     margin-top: -10px !important; /* Reduce gap by pulling it closer to the previous section */
     padding-top: 10px !important; /* Add subtle padding for clean alignment */
 }
-/* Resume Section Styling */
-#resume {
-    background-color: rgba(10, 25, 51, 0.85); /* Dark blue transparent background */
-    text-align: center; /* Center text content */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    height: 100vh; /* Occupy full viewport height */
-    margin-top: 0; /* Remove excess margin */
-    padding: 20px; /* Add space inside the section */
+/* --- Resume Section Overrides (Elements.html) --- */
+#resume.wrapper.style3.special {
+  background-color: rgba(10, 25, 51, 0.85) !important;
+  color: #f0f8ff !important;
+  padding: 50px 20px !important;
+  margin-bottom: 0 !important;
+  border: none !important;
 }
 
-/* Button Styling */
+/* --- Resume Section Buttons Overrides --- */
 #resume .actions .button {
-    margin: 10px 0; /* Add spacing between buttons */
-    padding: 15px 25px; /* Adjust button padding for a balanced look */
-    font-size: 1rem; /* Ensure buttons have readable text size */
-    border-radius: 5px; /* Add rounded corners */
-}
-	/* Override Styles for Resume Section */
-#resume {
-    background-color: rgba(10, 25, 51, 0.85) !important; /* Dark blue transparent background */
-    text-align: center !important; /* Center text content */
-    display: flex !important; /* Enable flexbox layout */
-    flex-direction: column !important; /* Arrange items vertically */
-    justify-content: center !important; /* Center content vertically */
-    align-items: center !important; /* Center content horizontally */
-    height: 100vh !important; /* Occupy full viewport height */
-    margin-top: 0 !important; /* Remove excess margin */
-    padding: 20px !important; /* Add inner spacing for clean layout */
-}
-
-/* Buttons Override Styling */
-#resume .actions .button {
-    margin: 10px 0 !important; /* Space between buttons */
-    padding: 15px 25px !important; /* Button padding for usability */
-    font-size: 1rem !important; /* Maintain readable text size */
-    border-radius: 5px !important; /* Add rounded corners for better aesthetics */
-}
-/* Style3 (Dark Transparent Background) */
-.wrapper.style3 {
-    background-color: rgba(10, 25, 51, 0.85) !important; /* Dark transparent blue */
-    background-image: url('assets/images/banner.jpg') !important; /* Background image */
-    background-size: cover !important; /* Make image cover the section */
-    background-blend-mode: overlay !important; /* Combine image and overlay */
-    color: #f0f8ff !important; /* Light text color for contrast */
-}
-
-/* Centering and spacing for 'special' sections */
-.wrapper.special {
-    text-align: center !important;
-    padding: 50px 20px !important;
-    margin-bottom: 0 !important;
-    border: none !important;
+  background: #fff !important;
+  color: #0a1933 !important;
+  padding: 12px 25px !important;
+  margin: 10px 5px !important;
+  font-size: 1rem !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
 }
 
