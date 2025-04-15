@@ -4077,7 +4077,7 @@ body, html {
 /* Overriding styles for section #three */
 #three {
     background-color: rgba(255, 255, 255, 0.9) !important; /* Less transparency for better readability */
-    color: #0a1a33 !important; /* Dark blue for maximum contrast */
+    color: #0a1a33 important; /* Dark blue for maximum contrast */
     padding: 50px 20px !important; /* Consistent spacing inside the section */
     margin: 0 !important; /* Remove any unwanted margins */
     border: none !important; /* Clear any borders applied */
@@ -4086,13 +4086,13 @@ body, html {
 
 /* Ensuring all text inside #three is visible and dark enough */
 #three h2, #three h3, #three p, #three li {
-    color: #0a1a33 !important; /* Force dark blue on all text */
+    color: #0a1a33 important; /* Force dark blue on all text */
     text-shadow: none !important; /* Remove any potential text shadows */
 }
 
 /* Optional for responsive layout, ensure content scales well */
 #three .inner {
-    max-width: 100% !important; /* Ensure inner content fills the available space */
+    max-width: 100% important; /* Ensure inner content fills the available space */
     margin: 0 auto !important; /* Center the content */
     padding: 20px !important; /* Padding for the inner content */
 }
