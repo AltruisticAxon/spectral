@@ -4005,4 +4005,9 @@ input, select, textarea {
 	font-weight: 400;
 	letter-spacing: normal;
 }
+#footer {
+    padding: 10px !important; /* Reduces the padding within the footer */
+    margin: 0 !important; /* Eliminates extra space around the footer */
+    line-height: 1.5 !important; /* Adjusts text spacing for compactness */
+}
 
