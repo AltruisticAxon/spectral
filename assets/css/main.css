@@ -4075,4 +4075,12 @@ body, html {
 #about-site-custom {
     margin-top: 0 !important; /* Remove top gap for "About Site" section */
 }
+#three {
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Semi-transparent white */
+    color: #1a2e45 !important; /* Dark blue shade for text visibility */
+}
+
+#three h2, #three h3, #three p {
+    color: inherit !important; /* Ensures all text adopts the darker blue */
+}
 
