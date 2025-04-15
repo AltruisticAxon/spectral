@@ -4069,18 +4069,30 @@ body, html {
 }
 
 #three {
-    margin-bottom: 0 !important; /* Remove bottom gap for HR section */
+    margin-bottom: 0 important; /* Remove bottom gap for HR section */
 }
 
 #about-site-custom {
-    margin-top: 0 !important; /* Remove top gap for "About Site" section */
-}
+    margin-top: 0 important; /* Remove top gap for "About Site" section */
+/* Overriding styles for section #three */
 #three {
-    background-color: rgba(255, 255, 255, 0.8) !important; /* Semi-transparent white */
-    color: #1a2e45 !important; /* Dark blue shade for text visibility */
+    background-color: rgba(255, 255, 255, 0.9) !important; /* Less transparency for better readability */
+    color: #0a1a33 !important; /* Dark blue for maximum contrast */
+    padding: 50px 20px !important; /* Consistent spacing inside the section */
+    margin: 0 !important; /* Remove any unwanted margins */
+    border: none !important; /* Clear any borders applied */
+    box-shadow: none !important; /* Clear any shadow effects */
 }
 
-#three h2, #three h3, #three p {
-    color: inherit !important; /* Ensures all text adopts the darker blue */
+/* Ensuring all text inside #three is visible and dark enough */
+#three h2, #three h3, #three p, #three li {
+    color: #0a1a33 !important; /* Force dark blue on all text */
+    text-shadow: none !important; /* Remove any potential text shadows */
 }
 
+/* Optional for responsive layout, ensure content scales well */
+#three .inner {
+    max-width: 100% !important; /* Ensure inner content fills the available space */
+    margin: 0 auto !important; /* Center the content */
+    padding: 20px !important; /* Padding for the inner content */
+}
