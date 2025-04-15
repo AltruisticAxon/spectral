@@ -4118,3 +4118,14 @@ body, html {
     margin: 0 auto !important; /* Center the content */
     padding: 20px !important; /* Inner spacing */
 }
+	/* Remove any unwanted gap between #three and #about-site-custom */
+#three {
+    margin-bottom: 0 !important; /* Ensure no margin below #three */
+    padding-bottom: 0 !important; /* Remove extra padding at the bottom */
+}
+
+#about-site-custom {
+    margin-top: 0 !important; /* Ensure no margin above "About Site" */
+    padding-top: 0 !important; /* Remove extra padding at the top */
+}
+
