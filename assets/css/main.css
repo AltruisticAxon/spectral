@@ -1753,6 +1753,14 @@ input, select, textarea {
 		}
 
 /* Section/Article */
+#three {
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% transparency */
+    color: #33475b; /* Dark grey-blue text for better visibility */
+}
+
+#three h2, #three h3, #three p {
+    color: inherit; /* Ensure headings and paragraphs use the same text color */
+}
 
 	section.special, article.special {
 		text-align: center;
