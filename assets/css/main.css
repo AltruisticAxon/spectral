@@ -4163,3 +4163,24 @@ body, html {
     font-size: 1rem; /* Ensure buttons have readable text size */
     border-radius: 5px; /* Add rounded corners */
 }
+	/* Override Styles for Resume Section */
+#resume {
+    background-color: rgba(10, 25, 51, 0.85) !important; /* Dark blue transparent background */
+    text-align: center !important; /* Center text content */
+    display: flex !important; /* Enable flexbox layout */
+    flex-direction: column !important; /* Arrange items vertically */
+    justify-content: center !important; /* Center content vertically */
+    align-items: center !important; /* Center content horizontally */
+    height: 100vh !important; /* Occupy full viewport height */
+    margin-top: 0 !important; /* Remove excess margin */
+    padding: 20px !important; /* Add inner spacing for clean layout */
+}
+
+/* Buttons Override Styling */
+#resume .actions .button {
+    margin: 10px 0 !important; /* Space between buttons */
+    padding: 15px 25px !important; /* Button padding for usability */
+    font-size: 1rem !important; /* Maintain readable text size */
+    border-radius: 5px !important; /* Add rounded corners for better aesthetics */
+}
+
