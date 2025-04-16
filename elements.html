@@ -24,29 +24,31 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 200px 20px; /* Maximize padding for vertical length */
-        margin: 0; /* Remove the gap between sections */
+        padding: 200px 20px;
+        margin: 0; /* Remove gaps between sections */
         border-radius: 8px;
-        height: 800px; /* Major increase in height */
+        height: 800px;
       }
 
       /* Buttons Styling */
       #cv-buttons a.button {
         display: inline-block;
-        background-color: #007ACC; /* Blue button background */
+        background: linear-gradient(135deg, #007ACC, #00C4FF); /* Gradient effect */
         color: #fff;
-        padding: 20px 50px; /* Larger buttons */
-        margin: 30px; /* Greater space between buttons */
-        border-radius: 5px;
-        font-size: 1.4rem; /* Larger text */
+        padding: 25px 60px; /* Larger padding for size and proportions */
+        margin: 30px; /* Space between buttons */
+        border-radius: 8px; /* Slightly rounded corners for a polished look */
+        font-size: 1.6rem; /* Larger text for emphasis */
         font-weight: bold;
-        text-decoration: none;
-        text-align: center; /* Text alignment inside buttons */
-        transition: background-color 0.3s ease;
+        text-align: center;
+        text-transform: uppercase; /* Make text stand out */
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow to make buttons pop */
+        transition: transform 0.3s ease, background-color 0.3s ease;
       }
 
       #cv-buttons a.button:hover {
-        background-color: #005999; /* Darker shade on hover */
+        transform: scale(1.1); /* Slight pop-out effect on hover */
+        background: linear-gradient(135deg, #005999, #007ACC); /* Darker gradient on hover */
       }
     </style>
   </head>
@@ -89,7 +91,7 @@
         <a href="#cv-buttons" class="more scrolly">Discover more!</a>
       </section>
 
-      <!-- Extended Section with Transparent Blue Background and Buttons -->
+      <!-- Refined Buttons Section -->
       <section id="cv-buttons">
         <div class="inner">
           <a href="assets/pdf/resume.pdf" target="_blank" class="button">View CV Online</a>
