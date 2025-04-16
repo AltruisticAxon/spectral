@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <style>
-      /* Added spacing to prevent sections from overlapping */
+      /* Ensure spacing between sections so they don't overlap */
       article#main > header {
         margin-bottom: 30px;
       }
@@ -20,6 +20,31 @@
       .about-site {
         margin-top: 50px;
         padding-top: 40px;
+      }
+      
+      /* Additional styling for the CV buttons area */
+      .resume-section .buttons {
+        background-color: #f5f5f5;  /* A light contrasting background */
+        text-align: center;
+        padding: 20px 0;
+        margin: 20px auto;
+        border-radius: 8px;
+        width: auto;  /* Adjusts to the content width */
+      }
+      .resume-section .buttons .button {
+        background-color: #007ACC;  /* Blue color for buttons */
+        color: #fff;
+        margin: 0 10px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+      .resume-section .buttons .button:hover {
+        background-color: #005999;
       }
     </style>
   </head>
@@ -111,4 +136,3 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-
