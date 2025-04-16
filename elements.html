@@ -12,9 +12,9 @@
         scroll-behavior: smooth;
       }
 
-      /* First Section Styling */
+      /* First Section Styling with Background Image */
       #main-header {
-        background: #0a1933 !important; /* Dark blue solid color */
+        background: linear-gradient(rgba(10, 25, 51, 0.6), rgba(10, 25, 51, 0.6)), url('assets/images/background.jpg') no-repeat center center/cover !important;
         color: #fff !important;
         text-align: center !important;
         display: flex !important;
@@ -42,8 +42,8 @@
       /* Buttons Styling */
       #cv-buttons a.button {
         display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
+        justify-content: center !important; /* Horizontally center the text */
+        align-items: center !important; /* Vertically center the text */
         background: linear-gradient(135deg, #007ACC, #00BFFF) !important; /* Gradient effect retained */
         color: #fff !important;
         padding: 20px 50px !important; /* Larger proportions for buttons */
@@ -90,7 +90,7 @@
         </nav>
       </header>
 
-      <!-- Main Header Section -->
+      <!-- Main Header Section with Background Image -->
       <section id="main-header">
         <div class="inner">
           <h2>Resume</h2>
@@ -120,7 +120,7 @@
       <!-- Footer -->
       <footer id="footer">
         <ul class="icons">
-          <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter"></span></a></li>
           <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram"></span></a></li>
           <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble"></span></a></li>
           <li><a href="#" class="icon solid fa-envelope"><span class="label">Email"></span></a></li>
