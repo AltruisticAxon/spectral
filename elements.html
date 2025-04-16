@@ -12,31 +12,44 @@
         scroll-behavior: smooth;
       }
 
-      /* Buttons Section Styling */
-      #cv-buttons {
-        background: rgba(10, 25, 51, 0.4) !important; /* Increased transparency with !important */
+      /* First Section Styling */
+      #main-header {
+        background: #0a1933 !important; /* Dark blue solid color */
+        color: #fff !important;
         text-align: center !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
-        padding: 200px 20px !important; /* Maintain proper padding with !important */
+        height: 100vh !important; /* Ensure it takes up the full screen */
+        padding: 50px 20px !important; /* Add some internal padding */
+      }
+
+      /* Buttons Section Styling */
+      #cv-buttons {
+        background: rgba(10, 25, 51, 0.4) !important; /* Transparent blue for better visibility */
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 250px 20px !important; /* Increase padding */
         margin: 0 !important; /* Ensure seamless transitions between sections */
         border-radius: 8px !important;
-        height: 800px !important; /* Retain height for a visually prominent section */
+        height: 1000px !important; /* Extend height for a visually prominent section */
       }
 
       /* Buttons Styling */
       #cv-buttons a.button {
         display: flex !important;
-        justify-content: center !important; /* Horizontally center the text */
-        align-items: center !important; /* Vertically center the text */
+        justify-content: center !important;
+        align-items: center !important;
         background: linear-gradient(135deg, #007ACC, #00BFFF) !important; /* Gradient effect retained */
         color: #fff !important;
-        padding: 12px 36px !important; /* Sleek proportions for buttons */
-        margin: 15px !important; /* Ensure spacing between buttons */
+        padding: 20px 50px !important; /* Larger proportions for buttons */
+        margin: 20px !important; /* Space between buttons */
         border-radius: 30px !important; /* Pill-shaped buttons for aesthetic appeal */
-        font-size: 1.2rem !important; /* Balanced font size */
+        font-size: 1.4rem !important; /* Balanced font size */
         font-weight: bold !important;
         text-decoration: none !important;
         text-transform: uppercase !important; /* Make text stand out */
@@ -77,41 +90,40 @@
         </nav>
       </header>
 
-      <!-- Main -->
-      <article id="main">
-        <header>
+      <!-- Main Header Section -->
+      <section id="main-header">
+        <div class="inner">
           <h2>Resume</h2>
           <p>Strategic HR Specialist | MA Human Resources | <a href="https://cardone.com">CIPD Level 7</a> | Associate CIPD</p>
-        </header>
+        </div>
       </section>
-        
-        <!-- CV Buttons Section -->
-        <section id="cv-buttons"  !important style="background-color: rgba(10, 25, 51, 0.85); color: #f0f8ff; !important
-          <div class="inner">
-            <a href="assets/pdf/resume.pdf" target="_blank" class="button">View CV Online</a>
-            <a href="assets/pdf/resume.pdf" download class="button">Download CV</a>
-          </div>
-        </section>
 
-        <!-- About Site Section -->
-        <section id="about-site-custom" class="wrapper style2 special" style="margin-top: 0 !important; padding-top: 0 !important; border: none !important;">
-          <div class="inner">
-            <header class="major" style="margin-bottom: 10px !important;">
-              <h2>About Site</h2>
-            </header>
-            <p>Kevin Cardone is an HR Master graduate with an undergraduate degree in Business Management. With extensive experience as an HR Officer and specialist in recruitment, Kevin has a proven track record in supporting organizational growth and talent development.</p>
-            <p>Learn more about Kevin, his expertise in HR and recruitment, and his approach to fostering professional growth. If you're ready to discuss your personal or business needs, reach out via email at <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a> or by using <a href="#">this contact form</a>.</p>
-          </div>
-        </section>
-      </article>
+      <!-- Extended CV Buttons Section -->
+      <section id="cv-buttons">
+        <div class="inner">
+          <a href="assets/pdf/resume.pdf" target="_blank" class="button">View CV Online</a>
+          <a href="assets/pdf/resume.pdf" download class="button">Download CV</a>
+        </div>
+      </section>
+
+      <!-- About Site Section -->
+      <section id="about-site-custom" class="wrapper style2 special" style="margin-top: 0 !important; padding-top: 0 !important; border: none !important;">
+        <div class="inner">
+          <header class="major" style="margin-bottom: 10px !important;">
+            <h2>About Site</h2>
+          </header>
+          <p>Kevin Cardone is an HR Master graduate with an undergraduate degree in Business Management. With extensive experience as an HR Officer and specialist in recruitment, Kevin has a proven track record in supporting organizational growth and talent development.</p>
+          <p>Learn more about Kevin, his expertise in HR and recruitment, and his approach to fostering professional growth. If you're ready to discuss your personal or business needs, reach out via email at <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a> or by using <a href="#">this contact form</a>.</p>
+        </div>
+      </section>
 
       <!-- Footer -->
       <footer id="footer">
         <ul class="icons">
           <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-          <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram"></span></a></li>
+          <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble"></span></a></li>
+          <li><a href="#" class="icon solid fa-envelope"><span class="label">Email"></span></a></li>
         </ul>
         <ul class="copyright">
           <li>&copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
