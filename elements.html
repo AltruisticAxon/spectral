@@ -9,42 +9,57 @@
       <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <style>
-      /* Ensure spacing between sections so they don't overlap */
+      /* Additional internal styles for this page */
+      
+      /* Spacing between elements to avoid overlap */
       article#main > header {
         margin-bottom: 30px;
       }
+      
+      /* Resume Section */
       .resume-section {
         margin-bottom: 50px;
         padding-bottom: 40px;
       }
-      .about-site {
-        margin-top: 50px;
-        padding-top: 40px;
+      
+      /* Button Area Styling */
+      .buttons {
+        background-color: #e0e0e0; /* Light contrasting background */
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 8px;
       }
       
-      /* Additional styling for the CV buttons area */
-      .resume-section .buttons {
-        background-color: #f5f5f5;  /* A light contrasting background */
-        text-align: center;
-        padding: 20px 0;
-        margin: 20px auto;
-        border-radius: 8px;
-        width: auto;  /* Adjusts to the content width */
-      }
-      .resume-section .buttons .button {
-        background-color: #007ACC;  /* Blue color for buttons */
+      /* Styling for the CV buttons */
+      .buttons .button {
+        background-color: #007ACC;
         color: #fff;
-        margin: 0 10px;
         padding: 15px 30px;
+        margin: 10px;
         border: none;
         border-radius: 5px;
         font-size: 1rem;
         font-weight: bold;
         text-decoration: none;
+        display: inline-block;
         transition: background-color 0.3s ease;
       }
-      .resume-section .buttons .button:hover {
+      
+      .buttons .button:hover {
         background-color: #005999;
+      }
+      
+      /* Subtitle text centered */
+      .subtitle {
+        text-align: center;
+        margin: 20px 0;
+      }
+      
+      /* About Site Section spacing */
+      .about-site {
+        margin-top: 50px;
+        padding-top: 40px;
       }
     </style>
   </head>
@@ -53,9 +68,7 @@
     <div id="page-wrapper">
       <!-- Header with Menu -->
       <header id="header">
-        <h1>
-          <a href="index.html">Kevin Cardone</a>
-        </h1>
+        <h1><a href="index.html">Kevin Cardone</a></h1>
         <nav id="nav">
           <ul>
             <li class="special">
@@ -72,7 +85,7 @@
           </ul>
         </nav>
       </header>
-
+      
       <!-- Main Content -->
       <article id="main">
         <!-- Page Header -->
@@ -80,19 +93,19 @@
           <h2>Resume</h2>
           <p>Click below to view or download my Resume</p>
         </header>
-
+        
         <!-- Resume Section -->
         <section class="resume-section">
           <h1>Resume</h1>
           <p class="subtitle">
-            If you are a potential employer or are interested in developing a business project with me, please feel free to view or download my resume to evaluate whether I would be a good fit for your business or project idea.
+            If you are a potential employer or are interested in developing a business project with me, please feel free to view or download my resume so you can evaluate whether I would be a good fit for your business or project idea.
           </p>
           <div class="buttons">
             <a href="assets/pdf/resume.pdf" target="_blank" class="button">View CV</a>
             <a href="assets/pdf/resume.pdf" download class="button">Download CV</a>
           </div>
         </section>
-
+        
         <!-- About Site Section -->
         <section class="about-site">
           <h2>About Site</h2>
@@ -109,7 +122,7 @@
           </p>
         </section>
       </article>
-
+      
       <!-- Footer -->
       <footer id="footer">
         <ul class="icons">
@@ -125,7 +138,7 @@
         </ul>
       </footer>
     </div>
-
+    
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
