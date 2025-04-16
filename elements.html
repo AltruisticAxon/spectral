@@ -16,13 +16,18 @@
         scroll-behavior: smooth;
       }
 
-      /* New Section Styling: Transparent Blue Background */
+      /* New Section Styling */
       #cv-buttons {
         background: rgba(10, 25, 51, 0.85); /* Transparent blue */
         text-align: center;
-        padding: 40px 20px;
-        margin: 50px 0; /* Space above and below the section */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px; /* Increase padding for more space */
+        margin: 50px 0; /* Space above and below */
         border-radius: 8px;
+        height: 300px; /* Set height to occupy more space */
       }
 
       /* Buttons Styling */
@@ -30,12 +35,13 @@
         display: inline-block;
         background-color: #007ACC; /* Blue button background */
         color: #fff;
-        padding: 15px 30px;
-        margin: 10px; /* Spacing between buttons */
+        padding: 15px 40px; /* Adjust padding for better proportions */
+        margin: 20px; /* Increase spacing between buttons */
         border-radius: 5px;
-        font-size: 1rem;
+        font-size: 1.2rem; /* Slightly larger font size */
         font-weight: bold;
         text-decoration: none;
+        text-align: center; /* Ensure text alignment inside buttons */
         transition: background-color 0.3s ease; /* Hover transition effect */
       }
 
@@ -49,47 +55,39 @@
     <!-- Page Wrapper -->
     <div id="page-wrapper">
 
-   <!DOCTYPE HTML>
-<html>
-    <head>
-        <title>About me</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="is-preload">
+      <!-- Header with Menu -->
+      <header id="header" class="alt">
+        <h1><a href="index.html">Kevin Cardone</a></h1>
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#menu" class="menuToggle"><span>Menu</span></a>
+              <div id="menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="generic.html">About me</a></li>
+                  <li><a href="elements.html">Resume</a></li>
+                  <li><a href="#">Contact me</a></li>
+                  <li><a href="#">Services</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <!-- Page Wrapper -->
-        <div id="page-wrapper">
-
-            <!-- Header -->
-            <header id="header">
-                <h1><a href="index.html">Kevin Cardone</a></h1>
-                <nav id="nav">
-                    <ul>
-                        <li class="special">
-                            <a href="#menu" class="menuToggle"><span>Menu</span></a>
-                            <div id="menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="generic.html">About me</a></li>
-                                    <li><a href="elements.html">Resume</a></li>
-                                    <li><a href="#">Contact me</a></li>
-                                    <li><a href="#">Services</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-
-            <!-- Main -->
-            <article id="main">
-                <header>
-                    <h2>About me</h2>
-                    <p>Strategic HR Specialist | MA Human Resources | <a href="https://cardone.com">CIPD Level 7</a> | Associate CIPD</p>
-                </header>
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <h2>Kevin G Cardone</h2>
+          <p>HR Specialist & System Architect<br />
+            <a href="https://altruisticaxon.github.io/spectral/">Resume</a></p>
+          <ul class="actions special">
+            <li><a href="#" class=""></a></li>
+          </ul>
+        </div>
+        <a href="#cv-buttons" class="more scrolly">Discover more!</a>
+      </section>
 
       <!-- New Section with Transparent Blue Background and Buttons -->
       <section id="cv-buttons">
