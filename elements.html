@@ -6,6 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Buttons Section Styling */
+      #cv-buttons {
+        background: rgba(10, 25, 51, 0.85); /* Transparent blue */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 200px 20px; /* Maximize padding for vertical space */
+        margin: 0; /* Remove gaps between sections */
+        border-radius: 8px;
+        height: 800px; /* Major increase in height for visual balance */
+      }
+
+      /* Buttons Styling */
+      #cv-buttons a.button {
+        display: flex;
+        justify-content: center; /* Horizontally center the text */
+        align-items: center; /* Vertically center the text */
+        background: linear-gradient(135deg, #007ACC, #00BFFF); /* Gradient effect for visual appeal */
+        color: #fff;
+        padding: 12px 36px; /* Adjusted padding for sleek buttons */
+        margin: 15px; /* Space between buttons */
+        border-radius: 30px; /* Sleek pill-shaped buttons */
+        font-size: 1.2rem; /* Balanced font size */
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase; /* Make text stand out */
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+      }
+
+      #cv-buttons a.button:hover {
+        transform: translateY(-5px); /* Subtle lift effect on hover */
+        box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+        background: linear-gradient(135deg, #005999, #007ACC); /* Darker hover gradient */
+      }
+    </style>
   </head>
   <body class="is-preload">
 
@@ -41,7 +85,7 @@
         </header>
 
         <!-- CV Buttons Section -->
-        <section id="cv-buttons" class="wrapper style2">
+        <section id="cv-buttons">
           <div class="inner">
             <a href="assets/pdf/resume.pdf" target="_blank" class="button">View CV Online</a>
             <a href="assets/pdf/resume.pdf" download class="button">Download CV</a>
@@ -64,9 +108,8 @@
       <footer id="footer">
         <ul class="icons">
           <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="#" class="icon brands fa-facebook-f"><span>Facebook</span></a></li>
-          <li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-          <li><a href="#" class="icon brands fa-dribbble"><span>Dribbble</span></a></li>
+          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
           <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
         </ul>
         <ul class="copyright">
