@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Contact Kevin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Header Section Styling */
+      #main-header {
+        background: linear-gradient(rgba(10, 25, 51, 0.6), rgba(10, 25, 51, 0.6)), url('assets/images/background.jpg') no-repeat center center/cover !important;
+        color: #fff !important;
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        height: 100vh !important; /* Full viewport height */
+        padding: 50px 20px;
+      }
+
+      /* Contact Form Section */
+      #contact-form {
+        background: rgba(10, 25, 51, 0.4); /* Transparent blue */
+        padding: 50px 20px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      #contact-form .field {
+        margin-bottom: 20px;
+      }
+      #contact-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      #contact-form input, #contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      #contact-form .actions {
+        margin-top: 20px;
+      }
+      #contact-form .button {
+        background: linear-gradient(135deg, #007ACC, #00BFFF);
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+      #contact-form .button:hover {
+        background: linear-gradient(135deg, #005999, #007ACC);
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      <!-- Header Section -->
+      <section id="main-header">
+        <div class="inner">
+          <h2>Contact Me</h2>
+          <p>Have any questions or inquiries? Feel free to reach out to me via the contact form below.</p>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section id="contact-form">
+        <div class="inner">
+          <h2>Get in Touch</h2>
+          <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Enter your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter your email" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" placeholder="Your message here" rows="6" required></textarea>
+            </div>
+            <div class="actions">
+              <button type="submit" class="button">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- About Site Section -->
+      <section id="about-site-custom" class="wrapper style2 special" style="margin-top: 0 !important; padding-top: 0; border: none;">
+        <div class="inner">
+          <header class="major" style="margin-bottom: 10px;">
+            <h2>About Site</h2>
+          </header>
+          <p>Kevin Cardone is an HR Master graduate with an undergraduate degree in Business Management. With extensive experience as an HR Officer and specialist in recruitment, Kevin has a proven track record in supporting organizational growth and talent development.</p>
+          <p>Learn more about Kevin, his expertise in HR and recruitment, and his approach to fostering professional growth. If you're ready to discuss your personal or business needs, reach out via email at <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a>.</p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter"></span></a></li>
+          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram"></span></a></li>
+          <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble"></span></a></li>
+          <li><a href="#" class="icon solid fa-envelope"><span class="label">Email"></span></a></li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
+          <li><a href="https://altruisticaxon.github.io/spectral/">Contact me</a></li>
+        </ul>
+      </footer>
+
+    </div> <!-- End of Page Wrapper -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
