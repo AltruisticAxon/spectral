@@ -1,6 +1,78 @@
 <!DOCTYPE HTML>
 <html>
+  <head>
+    <title>Contact Me</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
 
+      /* Main Header Section Styling with Banner */
+      #main-header {
+        background: linear-gradient(rgba(10, 25, 51, 0.6), rgba(10, 25, 51, 0.6)), url('assets/images/banner.jpg') no-repeat center center/cover !important;
+        color: #fff !important;
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        height: 100vh !important; /* Full viewport height */
+        padding: 50px 20px;
+      }
+
+      /* Contact Form Section */
+      #contact-form {
+        background: rgba(10, 25, 51, 0.4); /* Transparent blue */
+        padding: 50px 20px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      #contact-form .field {
+        margin-bottom: 20px;
+      }
+      #contact-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      #contact-form input, #contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      #contact-form .actions {
+        margin-top: 20px;
+      }
+      #contact-form .button {
+        background: linear-gradient(135deg, #007ACC, #00BFFF);
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        transition: background 0.2s ease;
+      }
+      #contact-form .button:hover {
+        background: linear-gradient(135deg, #005999, #007ACC);
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      <!-- Header -->
       <header id="header">
         <h1><a href="index.html">Kevin Cardone</a></h1>
         <nav id="nav">
@@ -21,8 +93,8 @@
         </nav>
       </header>
 
-      <!-- Main Header Section -->
-      <section id="main-header" style="background: linear-gradient(rgba(10, 25, 51, 0.6), rgba(10, 25, 51, 0.6)), url('assets/images/banner.jpg') no-repeat center center/cover; color: #fff; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; padding: 50px 20px;">
+      <!-- Main Header Section with Banner -->
+      <section id="main-header">
         <div class="inner">
           <h2>Contact Me</h2>
           <p>Have any questions or inquiries? Feel free to reach out to me via the contact form below.</p>
@@ -30,7 +102,7 @@
       </section>
 
       <!-- Contact Form Section -->
-      <section id="contact-form" style="background: rgba(10, 25, 51, 0.4); padding: 50px 20px; border-radius: 8px; text-align: center;">
+      <section id="contact-form">
         <div class="inner">
           <h2>Get in Touch</h2>
           <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
@@ -47,9 +119,7 @@
               <textarea name="message" id="message" placeholder="Your message here" rows="6" required></textarea>
             </div>
             <div class="actions">
-              <button type="submit" class="button" style="background: linear-gradient(135deg, #007ACC, #00BFFF); color: #fff; padding: 12px 20px; border-radius: 5px; border: none; cursor: pointer; font-size: 1rem; font-weight: bold; text-transform: uppercase; text-align: center; transition: background 0.2s ease;">
-                Send Message
-              </button>
+              <button type="submit" class="button">Send Message</button>
             </div>
           </form>
         </div>
@@ -70,9 +140,9 @@
       <footer id="footer">
         <ul class="icons">
           <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-          <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram"></span></a></li>
+          <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble"></span></a></li>
+          <li><a href="#" class="icon solid fa-envelope"><span class="label">Email"></span></a></li>
         </ul>
         <ul class="copyright">
           <li>&copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
