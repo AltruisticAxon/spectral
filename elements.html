@@ -1,25 +1,4 @@
 <!DOCTYPE HTML>
-<header id="header" style="background-color: #101820 !important; color: #f0f8ff !important;">
-  <h1><a href="index.html" style="text-decoration: none !important; color: #f0f8ff !important;">Kevin Cardone</a></h1>
-  <nav id="nav" style="font-family: Arial, sans-serif !important;">
-    <ul style="list-style: none !important; margin: 0 !important; padding: 0 !important;">
-      <li class="special" style="position: relative !important;">
-        <a href="#menu" class="menuToggle" style="cursor: pointer !important; font-weight: bold !important;">
-          <span style="background: #007ACC !important; padding: 10px 15px !important; border-radius: 5px !important; color: white !important;">Menu</span>
-        </a>
-        <div id="menu" style="display: none !important; position: absolute !important; top: 50px !important; right: 10px !important; background: white !important; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3) !important; padding: 15px !important; border-radius: 8px !important; z-index: 1000 !important;">
-          <ul style="list-style: none !important; margin: 0 !important; padding: 0 !important;">
-            <li style="margin-bottom: 10px !important;"><a href="index.html" style="color: #007ACC !important; text-decoration: none !important;">Home</a></li>
-            <li style="margin-bottom: 10px !important;"><a href="generic.html" style="color: #007ACC !important; text-decoration: none !important;">About me</a></li>
-            <li style="margin-bottom: 10px !important;"><a href="elements.html" style="color: #007ACC !important; text-decoration: none !important;">Resume</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
 <html>
   <head>
     <title>Kevin Cardone</title>
@@ -35,51 +14,59 @@
 
       /* Buttons Section Styling */
       #cv-buttons {
-        background: rgba(10, 25, 51, 0.4) !important; /* Transparent blue for better visibility */
+        background: rgba(10, 25, 51, 0.4) !important;
         text-align: center !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
-        padding: 150px 20px !important; /* Increased padding for a longer section */
-        margin: 0 !important; /* Seamless transitions between sections */
+        padding: 150px 20px !important;
+        margin: 0 !important;
         border-radius: 8px !important;
-        height: 750px !important; /* Extended height for prominence */
+        height: 750px !important;
       }
 
       /* Text Styling for Professional Look */
       #cv-buttons p {
         font-size: 1.3rem !important;
-        font-weight: 400 !important; /* Medium weight for balanced readability */
+        font-weight: 400 !important;
         line-height: 1.6 !important;
-        margin: 0 auto 30px !important; /* Center the text and add space below */
-        max-width: 800px !important; /* Keep the text width contained */
-        text-align: center !important; /* Center the text visually */
-        color: #f0f8ff !important; /* Light color to match the background */
+        margin: 0 auto 30px !important;
+        max-width: 800px !important;
+        text-align: center !important;
+        color: #f0f8ff !important;
       }
 
       /* Buttons Styling */
       #cv-buttons a.button {
         display: flex !important;
-        justify-content: center !important; /* Horizontally center the text */
-        align-items: center !important; /* Vertically center the text */
-        background: linear-gradient(135deg, #007ACC, #00BFFF) !important; /* Gradient effect retained */
+        justify-content: center !important;
+        align-items: center !important;
+        background: linear-gradient(135deg, #007ACC, #00BFFF) !important;
         color: #fff !important;
-        padding: 20px 50px !important; /* Larger proportions for buttons */
-        margin: 20px !important; /* Space between buttons */
-        border-radius: 30px !important; /* Pill-shaped buttons for aesthetic appeal */
-        font-size: 1.4rem !important; /* Balanced font size */
+        padding: 20px 50px !important;
+        margin: 20px !important;
+        border-radius: 30px !important;
+        font-size: 1.4rem !important;
         font-weight: bold !important;
         text-decoration: none !important;
-        text-transform: uppercase !important; /* Eye-catching text style */
-        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2) !important; /* Subtle depth effect */
-        transition: transform 0.2s ease, box-shadow 0.2s ease !important; /* Smooth hover effects */
+        text-transform: uppercase !important;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2) !important;
+        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
       }
 
       #cv-buttons a.button:hover {
-        transform: translateY(-5px) !important; /* Subtle lift effect */
-        box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3) !important; /* Enhanced shadow on hover */
-        background: linear-gradient(135deg, #005999, #007ACC) !important; /* Darker hover gradient */
+        transform: translateY(-5px) !important;
+        box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3) !important;
+        background: linear-gradient(135deg, #005999, #007ACC) !important;
+      }
+
+      /* Menu Visibility */
+      #menu {
+        display: none;
+      }
+      #menu.visible {
+        display: block !important;
       }
     </style>
   </head>
@@ -87,26 +74,27 @@
 
     <!-- Page Wrapper -->
     <div id="page-wrapper">
-
-               <!-- Header -->
-            <header id="header">
-                <h1><a href="index.html">Kevin Cardone</a></h1>
-                <nav id="nav">
-                    <ul>
-                        <li class="special">
-                            <a href="#menu" class="menuToggle"><span>Menu</span></a>
-                            <div id="menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="generic.html">About me</a></li>
-                                    <li><a href="elements.html">Resume</a></li>
-                             
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+      
+      <!-- Header -->
+      <header id="header" style="background-color: #101820 !important; color: #f0f8ff !important;">
+        <h1><a href="index.html" style="text-decoration: none !important; color: #f0f8ff !important;">Kevin Cardone</a></h1>
+        <nav id="nav" style="font-family: Arial, sans-serif !important;">
+          <ul style="list-style: none !important; margin: 0 !important; padding: 0 !important;">
+            <li class="special" style="position: relative !important;">
+              <a href="#" class="menuToggle" style="cursor: pointer !important; font-weight: bold !important;">
+                <span style="background: #007ACC !important; padding: 10px 15px !important; border-radius: 5px !important; color: white !important;">Menu</span>
+              </a>
+              <div id="menu" style="display: none; position: absolute; top: 50px; right: 10px; background: white; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); padding: 15px; border-radius: 8px; z-index: 1000;">
+                <ul style="list-style: none; margin: 0; padding: 0;">
+                  <li><a href="index.html" style="color: #007ACC; text-decoration: none;">Home</a></li>
+                  <li><a href="generic.html" style="color: #007ACC; text-decoration: none;">About me</a></li>
+                  <li><a href="elements.html" style="color: #007ACC; text-decoration: none;">Resume</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
       <!-- Main -->
       <article id="main">
@@ -140,12 +128,32 @@
       <!-- Footer -->
       <footer id="footer">
         <ul class="icons">
-                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon solid fa-envelope"><span class="label">Email"></span></a></li>
+          <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
         </ul>
         <ul class="copyright">
           <li>&copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
-          <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope>Contact me</a></li>
-        </ul
+          <li><a href="mailto:kevincardone99@gmail.com">Contact me</a></li>
+        </ul>
+      </footer>
+
+    </div> <!-- End of Page Wrapper -->
+
+    <!-- Scripts -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menuToggle");
+        const menu = document.querySelector("#menu");
+
+        if (menuToggle && menu) {
+          menuToggle.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default anchor behavior
+            menu.classList.toggle("visible"); // Toggle the 'visible' class
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
