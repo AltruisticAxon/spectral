@@ -10,165 +10,73 @@
       /* General Styling */
       body {
         font-family: Arial, sans-serif;
-        line-height: 1.6;
         margin: 0;
         padding: 0;
         background-color: #f4f4f4;
-        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
       }
 
-      a {
-        color: #007ACC;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      /* Header Styles */
-      #header {
-        background: #101820;
-        color: #f0f8ff;
-        padding: 10px 20px;
-        text-align: center;
-      }
-
-      #header h1 {
-        margin: 0;
-        font-size: 2rem;
-      }
-
-      /* Go Back Button */
-      #goBackButton {
-        display: inline-block;
-        margin: 20px auto;
-        padding: 10px 20px;
-        background: #007ACC;
-        color: white;
+      /* "Go Back/Home" Button */
+      #goBackHome {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 15px 25px;
+        background-color: #007ACC;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
         border: none;
         border-radius: 5px;
-        font-size: 1rem;
         cursor: pointer;
+        text-decoration: none;
         text-align: center;
-        transition: background 0.3s ease;
+        transition: background-color 0.3s ease;
       }
 
-      #goBackButton:hover {
-        background: #005999;
+      #goBackHome:hover {
+        background-color: #005999;
       }
 
-      /* Main Section */
-      #main {
-        padding: 20px;
-        background: white;
-        margin: 20px auto;
-        max-width: 800px;
+      /* Central Button Styling */
+      .center-buttons {
+        text-align: center;
+      }
+
+      .center-buttons .button {
+        display: inline-block;
+        margin: 20px;
+        padding: 20px 40px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: #007ACC;
+        color: #fff;
+        text-decoration: none;
         border-radius: 8px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
       }
 
-      h2 {
-        text-align: center;
-        color: #333;
-      }
-
-      p {
-        margin: 1rem 0;
-      }
-
-      ul {
-        list-style-type: disc;
-        margin-left: 20px;
-      }
-
-      /* Footer Styles */
-      #footer {
-        text-align: center;
-        padding: 20px 10px;
-        background: #101820;
-        color: white;
-        margin-top: 20px;
-      }
-
-      #footer ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-      }
-
-      #footer ul li {
-        display: inline;
-        margin: 0 10px;
+      .center-buttons .button:hover {
+        background-color: #005999;
+        transform: scale(1.05);
       }
     </style>
   </head>
   <body>
 
-    <!-- Header -->
-    <header id="header">
-      <h1>Kevin Cardone</h1>
-    </header>
+    <!-- Go Back/Home Button -->
+    <a id="goBackHome" href="index.html">Go Back/Home</a>
 
-    <!-- Go Back Button -->
-    <div style="text-align: center;">
-      <button id="goBackButton" onclick="goBack()">Go Back</button>
+    <!-- Center Content with Buttons -->
+    <div class="center-buttons">
+      <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
+      <a href="assets/CVPDF.pdf" download class="button">Download CV</a>
     </div>
-
-    <!-- Main Section -->
-    <div id="main">
-      <h2>Resume</h2>
-      <p>
-        Welcome to my Resume page. Below, you'll find details about my skills, experience, and qualifications.
-      </p>
-
-      <h3>🛠 HR Platforms & Systems:</h3>
-      <ul>
-        <li>SAP SuccessFactors</li>
-        <li>Workday</li>
-        <li>BambooHR</li>
-        <li>LinkedIn Recruiter</li>
-        <li>Greenhouse</li>
-        <li>Gusto</li>
-        <li>Google Workspace</li>
-      </ul>
-
-      <h3>📊 HR Data & Analytical Tools:</h3>
-      <ul>
-        <li>Excel (Advanced)</li>
-        <li>Power BI</li>
-        <li>Tableau</li>
-        <li>CultureAmp</li>
-      </ul>
-
-      <p>
-        If you'd like to explore opportunities to collaborate, feel free to contact me or download my resume below.
-      </p>
-
-      <div style="text-align: center; margin-top: 20px;">
-        <a href="assets/CVPDF.pdf" target="_blank" style="padding: 10px 20px; background: #007ACC; color: white; text-decoration: none; border-radius: 5px;">View CV Online</a>
-        <a href="assets/CVPDF.pdf" download style="padding: 10px 20px; background: #005999; color: white; text-decoration: none; border-radius: 5px; margin-left: 10px;">Download CV</a>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <ul>
-        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="mailto:kevincardone99@gmail.com">Email</a></li>
-      </ul>
-      <p>&copy; 2025 Kevin Cardone - All Rights Reserved</p>
-    </footer>
-
-    <!-- Scripts -->
-    <script>
-      function goBack() {
-        window.history.back();
-      }
-    </script>
 
   </body>
 </html>
-
