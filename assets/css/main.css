@@ -4241,3 +4241,9 @@ body, html {
   border-radius: 4px !important;
   text-decoration: none !important;
 }
+#menu {
+  display: none;
+}
+#menu.visible {
+  display: block !important; /* Visible when 'visible' class is toggled */
+}
