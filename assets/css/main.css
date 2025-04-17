@@ -4369,3 +4369,19 @@ html {
   font-size: 1rem !important;
   line-height: 1.6 !important;
 }
+	#menu {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Hidden off-screen initially */
+  width: 300px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: right 0.3s ease;
+}
+
+#menu.is-menu-visible {
+  right: 0; /* Slides menu into view */
+}
+
