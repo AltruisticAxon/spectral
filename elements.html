@@ -60,6 +60,14 @@
         box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3) !important; /* Enhanced shadow on hover */
         background: linear-gradient(135deg, #005999, #007ACC) !important; /* Darker hover gradient */
       }
+
+      /* Menu Visibility */
+      #menu {
+        display: none; /* Hidden by default */
+      }
+      #menu.visible {
+        display: block !important; /* Visible when 'visible' class is toggled */
+      }
     </style>
   </head>
   <body class="is-preload">
@@ -67,25 +75,24 @@
     <!-- Page Wrapper -->
     <div id="page-wrapper">
 
-               <!-- Header -->
-            <header id="header">
-                <h1><a href="index.html">Kevin Cardone</a></h1>
-                <nav id="nav">
-                    <ul>
-                        <li class="special">
-                            <a href="#menu" class="menuToggle"><span>Menu</span></a>
-                            <div id="menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="generic.html">About me</a></li>
-                                    <li><a href="elements.html">Resume</a></li>
-                             
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+      <!-- Header -->
+      <header id="header">
+        <h1><a href="index.html">Kevin Cardone</a></h1>
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#" class="menuToggle"><span>Menu</span></a>
+              <div id="menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="generic.html">About me</a></li>
+                  <li><a href="elements.html">Resume</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
       <!-- Main -->
       <article id="main">
@@ -119,26 +126,32 @@
       <!-- Footer -->
       <footer id="footer">
         <ul class="icons">
-                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon solid fa-envelope"><span class="label">Email"></span></a></li>
+          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
         </ul>
         <ul class="copyright">
           <li>&copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
-          <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope>Contact me</a></li>
+          <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope">Contact me</a></li>
         </ul>
       </footer>
 
     </div> <!-- End of Page Wrapper -->
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menuToggle");
+        const menu = document.querySelector("#menu");
+
+        if (menuToggle && menu) {
+          menuToggle.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default anchor behavior
+            menu.classList.toggle("visible"); // Toggle the 'visible' class
+          });
+        }
+      });
+    </script>
   </body>
 </html>
