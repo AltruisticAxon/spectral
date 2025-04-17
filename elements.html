@@ -1,18 +1,64 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Resume</title>
+    <title>Kevin Cardone</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-      /* Menu Visibility */
-      #menu {
-        display: none;
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
       }
-      #menu.visible {
-        display: block !important;
+
+      /* Buttons Section Styling */
+      #cv-buttons {
+        background: rgba(10, 25, 51, 0.4) !important; /* Transparent blue for better visibility */
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 150px 20px !important; /* Increased padding for a longer section */
+        margin: 0 !important; /* Seamless transitions between sections */
+        border-radius: 8px !important;
+        height: 750px !important; /* Extended height for prominence */
+      }
+
+      /* Text Styling for Professional Look */
+      #cv-buttons p {
+        font-size: 1.3rem !important;
+        font-weight: 400 !important; /* Medium weight for balanced readability */
+        line-height: 1.6 !important;
+        margin: 0 auto 30px !important; /* Center the text and add space below */
+        max-width: 800px !important; /* Keep the text width contained */
+        text-align: center !important; /* Center the text visually */
+        color: #f0f8ff !important; /* Light color to match the background */
+      }
+
+      /* Buttons Styling */
+      #cv-buttons a.button {
+        display: flex !important;
+        justify-content: center !important; /* Horizontally center the text */
+        align-items: center !important; /* Vertically center the text */
+        background: linear-gradient(135deg, #007ACC, #00BFFF) !important; /* Gradient effect retained */
+        color: #fff !important;
+        padding: 20px 50px !important; /* Larger proportions for buttons */
+        margin: 20px !important; /* Space between buttons */
+        border-radius: 30px !important; /* Pill-shaped buttons for aesthetic appeal */
+        font-size: 1.4rem !important; /* Balanced font size */
+        font-weight: bold !important;
+        text-decoration: none !important;
+        text-transform: uppercase !important; /* Eye-catching text style */
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2) !important; /* Subtle depth effect */
+        transition: transform 0.2s ease, box-shadow 0.2s ease !important; /* Smooth hover effects */
+      }
+
+      #cv-buttons a.button:hover {
+        transform: translateY(-5px) !important; /* Subtle lift effect */
+        box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3) !important; /* Enhanced shadow on hover */
+        background: linear-gradient(135deg, #005999, #007ACC) !important; /* Darker hover gradient */
       }
     </style>
   </head>
@@ -21,89 +67,66 @@
     <!-- Page Wrapper -->
     <div id="page-wrapper">
 
-      <!-- Header -->
-      <header id="header">
-        <h1><a href="index.html">Kevin Cardone</a></h1>
-        <nav id="nav">
-          <ul>
-            <li class="special">
-              <a href="#" class="menuToggle"><span>Menu</span></a>
-              <div id="menu">
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="generic.html">About me</a></li>
-                  <li><a href="elements.html">Resume</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </header>
+               <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">Kevin Cardone</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="special">
+                            <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                            <div id="menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="generic.html">About me</a></li>
+                                    <li><a href="elements.html">Resume</a></li>
+                             
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-      <!-- Main Content -->
+      <!-- Main -->
       <article id="main">
         <header>
           <h2>Resume</h2>
-          <p>Strategic HR Specialist | MA Human Resources | <a href="https://www.cipd.org/uk/learning/qualifications/advanced/advanced-diploma-in-strategic-people-management/">CIPD Level 7</a> | <a href="https://www.cipd.org/en/membership/levels/associate-membership">Associate CIPD</a></p>
         </header>
-        <section class="wrapper style5">
-          <div class="inner">
-            <h3>Hi, my name is Kevin.</h3>
-            <p>Globally minded and results-driven HR professional, with a strong foundation in talent development, people strategy, and organizational transformation. I bring a proven ability to deliver effective HR solutions across the employee lifecycle, combining strategic thinking with practical, people-first approaches.</p>
-            
-            <p>Whether driving engagement, improving processes, or managing compliance, I focus on sustainable results that align HR strategy with business growth.</p>
-
-            <h4>🛠 HR Platforms & Systems:</h4>
-            <ul>
-              <li>SAP SuccessFactors</li>
-              <li>Workday</li>
-              <li>BambooHR</li>
-              <li>PeopleSoft</li>
-              <li>Greenhouse</li>
-              <li>LinkedIn Recruiter</li>
-              <li>Cornerstone OnDemand</li>
-              <li>Zoho People</li>
-              <li>HiBob</li>
-              <li>Gusto</li>
-              <li>BrightHR</li>
-              <li>Google Workspace for HR Automation</li>
-              <li>Tools: Trello, Asana, Jira, MS Teams, Slack</li>
-            </ul>
-
-            <h4>📊 HR Data & Analytical Tools:</h4>
-            <ul>
-              <li>Excel (Advanced)</li>
-              <li>Power BI</li>
-              <li>Tableau</li>
-              <li>Google Data Studio</li>
-              <li>Employee feedback tools: CultureAmp, SurveyMonkey, Qualtrics</li>
-            </ul>
-          </div>
-        </section>
       </article>
 
-      <!-- About Site Section -->
-      <section id="about-site-custom" class="wrapper style2 special" style="margin-top: 0 !important; padding-top: 0; border: none;">
+      <!-- Extended CV Buttons Section -->
+      <section id="cv-buttons">
+        <p>
+          If you are a potential employer or are interested in developing a business project with me, please feel free to view or download my resume to better evaluate whether I would be a good fit for your business or project idea.
+        </p>
         <div class="inner">
-          <header class="major" style="margin-bottom: 10px;">
+          <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV Online</a>
+          <a href="assets/CVPDF.pdf" download class="button">Download CV</a>
+        </div>
+      </section>
+
+      <!-- About Site Section -->
+      <section id="about-site-custom" class="wrapper style2 special" style="margin-top: 0 !important; padding-top: 0 !important; border: none !important;">
+        <div class="inner">
+          <header class="major" style="margin-bottom: 10px !important;">
             <h2>About Site</h2>
           </header>
           <p>Kevin Cardone is an HR Master graduate with an undergraduate degree in Business Management. With extensive experience as an HR Officer and specialist in recruitment, Kevin has a proven track record in supporting organizational growth and talent development.</p>
-          <p>Learn more about Kevin, his expertise in HR and recruitment, and his approach to fostering professional growth. If you're ready to discuss your personal or business needs, reach out via email at <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a>.</p>
+          <p>Learn more about Kevin, his expertise in HR and recruitment, and his approach to fostering professional growth. If you're ready to discuss your personal or business needs, reach out via email at <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a> or by using <a href="mailto:kevincardone99@gmail.com">this contact form</a>.</p>
         </div>
       </section>
 
       <!-- Footer -->
       <footer id="footer">
         <ul class="icons">
-          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon solid fa-envelope"><span class="label">Email"></span></a></li>
         </ul>
         <ul class="copyright">
-          <li>Copyright &copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
-          <li><a href="mailto:kevincardone99@gmail.com">Contact me</a></li>
+          <li>&copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
+          <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope>Contact me</a></li>
         </ul>
       </footer>
 
@@ -117,19 +140,5 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.querySelector(".menuToggle");
-        const menu = document.querySelector("#menu");
-
-        if (menuToggle && menu) {
-          menuToggle.addEventListener("click", function (e) {
-            e.preventDefault();
-            menu.classList.toggle("visible");
-          });
-        }
-      });
-    </script>
-
   </body>
 </html>
