@@ -1,102 +1,174 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Kevin Cardone</title>
+    <title>Resume - Kevin Cardone</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-      /* "Go Back" Button Styling */
-      .goBackButton {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #007ACC;
-        color: #ffffff;
-        font-size: 1rem;
-        font-weight: bold;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+      /* General Styling */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
       }
 
-      .goBackButton:hover {
-        background-color: #005999;
+      a {
+        color: #007ACC;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Header Styles */
+      #header {
+        background: #101820;
+        color: #f0f8ff;
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      #header h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      /* Go Back Button */
+      #goBackButton {
+        display: inline-block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background: #007ACC;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        transition: background 0.3s ease;
+      }
+
+      #goBackButton:hover {
+        background: #005999;
+      }
+
+      /* Main Section */
+      #main {
+        padding: 20px;
+        background: white;
+        margin: 20px auto;
+        max-width: 800px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      p {
+        margin: 1rem 0;
+      }
+
+      ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
+
+      /* Footer Styles */
+      #footer {
+        text-align: center;
+        padding: 20px 10px;
+        background: #101820;
+        color: white;
+        margin-top: 20px;
+      }
+
+      #footer ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      #footer ul li {
+        display: inline;
+        margin: 0 10px;
       }
     </style>
   </head>
-  <body class="is-preload">
+  <body>
 
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
+    <!-- Header -->
+    <header id="header">
+      <h1>Kevin Cardone</h1>
+    </header>
 
-      <!-- Header -->
-      <header id="header">
-        <h1><a href="index.html">Kevin Cardone</a></h1>
-        <nav id="nav">
-          <ul>
-            <!-- "Go Back" Button -->
-            <li class="special">
-              <button class="goBackButton" onclick="goBack()">Go Back</button>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <!-- Go Back Button -->
+    <div style="text-align: center;">
+      <button id="goBackButton" onclick="goBack()">Go Back</button>
+    </div>
 
-      <!-- Main -->
-      <article id="main">
-        <header>
-          <h2>Resume</h2>
-        </header>
-      </article>
+    <!-- Main Section -->
+    <div id="main">
+      <h2>Resume</h2>
+      <p>
+        Welcome to my Resume page. Below, you'll find details about my skills, experience, and qualifications.
+      </p>
 
-      <!-- Extended CV Buttons Section -->
-      <section id="cv-buttons">
-        <p>
-          If you are a potential employer or are interested in developing a business project with me, please feel free to view or download my resume to better evaluate whether I would be a good fit for your business or project idea.
-        </p>
-        <div class="inner">
-          <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV Online</a>
-          <a href="assets/CVPDF.pdf" download class="button">Download CV</a>
-        </div>
-      </section>
+      <h3>🛠 HR Platforms & Systems:</h3>
+      <ul>
+        <li>SAP SuccessFactors</li>
+        <li>Workday</li>
+        <li>BambooHR</li>
+        <li>LinkedIn Recruiter</li>
+        <li>Greenhouse</li>
+        <li>Gusto</li>
+        <li>Google Workspace</li>
+      </ul>
 
-      <!-- About Site Section -->
-      <section id="about-site-custom" class="wrapper style2 special" style="margin-top: 0 !important; padding-top: 0 !important; border: none !important;">
-        <div class="inner">
-          <header class="major" style="margin-bottom: 10px !important;">
-            <h2>About Site</h2>
-          </header>
-          <p>Kevin Cardone is an HR Master graduate with an undergraduate degree in Business Management. With extensive experience as an HR Officer and specialist in recruitment, Kevin has a proven track record in supporting organizational growth and talent development.</p>
-          <p>Learn more about Kevin, his expertise in HR and recruitment, and his approach to fostering professional growth. If you're ready to discuss your personal or business needs, reach out via email at <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a> or by using <a href="mailto:kevincardone99@gmail.com">this contact form</a>.</p>
-        </div>
-      </section>
+      <h3>📊 HR Data & Analytical Tools:</h3>
+      <ul>
+        <li>Excel (Advanced)</li>
+        <li>Power BI</li>
+        <li>Tableau</li>
+        <li>CultureAmp</li>
+      </ul>
 
-      <!-- Footer -->
-      <footer id="footer">
-        <ul class="icons">
-          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope"><span class="label">Email"></span></a></li>
-        </ul>
-        <ul class="copyright">
-          <li>&copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
-          <li><a href="mailto:kevincardone99@gmail.com">Contact me</a></li>
-        </ul>
-      </footer>
+      <p>
+        If you'd like to explore opportunities to collaborate, feel free to contact me or download my resume below.
+      </p>
 
-    </div> <!-- End of Page Wrapper -->
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="assets/CVPDF.pdf" target="_blank" style="padding: 10px 20px; background: #007ACC; color: white; text-decoration: none; border-radius: 5px;">View CV Online</a>
+        <a href="assets/CVPDF.pdf" download style="padding: 10px 20px; background: #005999; color: white; text-decoration: none; border-radius: 5px; margin-left: 10px;">Download CV</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <ul>
+        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="mailto:kevincardone99@gmail.com">Email</a></li>
+      </ul>
+      <p>&copy; 2025 Kevin Cardone - All Rights Reserved</p>
+    </footer>
 
     <!-- Scripts -->
     <script>
-      // Function for "Go Back" Button
       function goBack() {
         window.history.back();
       }
     </script>
+
   </body>
 </html>
 
