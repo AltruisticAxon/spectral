@@ -151,8 +151,10 @@
       </footer>
 
     </div> <!-- End of Page Wrapper -->
+                
 
     <!-- Scripts -->
+                
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -177,5 +179,19 @@
           </li>
         </ul>
       </footer>
+      <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menuToggle");
+    const menu = document.querySelector("#menu");
+
+    if (menuToggle && menu) {
+      menuToggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        menu.classList.toggle("visible"); // Toggle the 'visible' class
+      });
+    }
+  });
+</script>
+
   </body>
 </html>
