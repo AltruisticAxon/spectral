@@ -4247,3 +4247,125 @@ body, html {
 #menu.visible {
   display: block !important; /* Visible when 'visible' class is toggled */
 }
+/* Override Smooth Scrolling */
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* Override Header Styles */
+#header {
+  background-color: #101820 !important;
+  color: #f0f8ff !important;
+}
+
+#header h1 a {
+  text-decoration: none !important;
+  color: #f0f8ff !important;
+}
+
+/* Menu Styles */
+#menu {
+  position: fixed !important;
+  top: 0 !important;
+  right: -300px !important; /* Hidden off-screen initially */
+  width: 300px !important;
+  height: 100% !important;
+  background: #ffffff !important; /* White background for the menu */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2) !important; /* Add shadow for depth */
+  z-index: 1000 !important;
+  transition: right 0.3s ease !important; /* Smooth slide-in effect */
+}
+
+#menu.visible {
+  right: 0 !important; /* Slides the menu into view */
+}
+
+/* Menu Toggle Button */
+.menuToggle {
+  cursor: pointer !important;
+  font-weight: bold !important;
+  padding: 10px 15px !important;
+  border-radius: 5px !important;
+  background: #007ACC !important;
+  color: white !important;
+}
+
+/* Menu List */
+#menu ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 20px !important;
+}
+
+#menu ul li {
+  margin-bottom: 15px !important;
+}
+
+#menu ul li a {
+  color: #007ACC !important;
+  text-decoration: none !important;
+}
+
+/* CV Buttons Section */
+#cv-buttons {
+  background: rgba(10, 25, 51, 0.4) !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 150px 20px !important;
+  margin: 0 !important;
+  border-radius: 8px !important;
+  height: 750px !important;
+}
+
+#cv-buttons p {
+  font-size: 1.3rem !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  margin: 0 auto 30px !important;
+  max-width: 800px !important;
+  text-align: center !important;
+  color: #f0f8ff !important;
+}
+
+#cv-buttons a.button {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: linear-gradient(135deg, #007ACC, #00BFFF) !important;
+  color: #fff !important;
+  padding: 20px 50px !important;
+  margin: 20px !important;
+  border-radius: 30px !important;
+  font-size: 1.4rem !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+#cv-buttons a.button:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3) !important;
+  background: linear-gradient(135deg, #005999, #007ACC) !important;
+}
+
+/* About Site Section */
+#about-site-custom {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border: none !important;
+}
+
+#about-site-custom h2 {
+  margin-bottom: 10px !important;
+}
+
+#about-site-custom p {
+  color: #555 !important;
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+}
