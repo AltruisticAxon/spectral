@@ -55,14 +55,47 @@
       </header>
 
       <!-- Main Content: Two Big Buttons for CV -->
-      <article id="main">
-        <section class="wrapper style5">
-          <div class="inner center-buttons">
-            <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
-            <a href="assets/CVPDF.pdf" download class="button">Download CV</a>
-          </div>
-        </section>
-      </article>
+     <!-- Updated Buttons Section -->
+<article id="main">
+  <section class="wrapper style5">
+    <div class="inner center-buttons">
+      <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
+      <a href="assets/CVPDF.pdf" download class="button">Download CV</a>
+    </div>
+  </section>
+</article>
+
+<!-- Updated CSS for this section (Place inside your head's style block) -->
+<style>
+  /* Updated styling for the central CV buttons section */
+  .center-buttons {
+    text-align: center;
+    padding: 120px 0; /* Increased padding for improved visual balance */
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* A smooth gradient background */
+    border-radius: 15px;
+  }
+
+  .center-buttons .button {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #007ACC;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px; /* More rounded corners for a softer shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  }
+
+  .center-buttons .button:hover {
+    background-color: #005999;
+    transform: scale(1.1); /* A gentle scale up on hover for interactivity */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+</style>
 
       <!-- "About Site" Section (Same as your original layout) -->
       <section id="about-site-custom" class="wrapper style2 special" style="margin-top: 0 !important; padding-top: 0; border: none;">
