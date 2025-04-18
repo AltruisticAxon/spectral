@@ -9,23 +9,36 @@
       <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <style>
-      /* Updated styling for the central CV buttons section */
+      /* Title Section Styling: Compact with Black Background */
+      .title-section {
+        background-color: #000 !important; /* Enforced black background */
+        padding: 10px 0 !important;          /* Minimal vertical padding */
+        text-align: center;
+        margin-bottom: 0 !important;         /* Remove bottom margin */
+      }
+      .title-section h2 {
+        font-size: 1.5rem;
+        color: #fff !important;
+        margin: 0;
+        padding: 0 10px;
+        line-height: 1.2;
+      }
+      
+      /* Buttons Section Styling: Background updated to black to grey gradient */
       .full-bg {
-        background: linear-gradient(135deg, #74ebd5, #ACB6E5);
-        padding: 120px 0; /* Increased padding for improved balance */
+        background: linear-gradient(135deg, #000000, #555555) !important; /* Black to grey gradient */
+        padding: 120px 0;
         border-radius: 15px;
-        width: 100vw; /* Full viewport width */
+        width: 100vw;
         position: relative;
         left: 50%;
         right: 50%;
         margin-left: -50vw;
         margin-right: -50vw;
       }
-
       .center-buttons {
         text-align: center;
       }
-
       .center-buttons .button {
         display: inline-flex;
         align-items: center;
@@ -38,15 +51,14 @@
         background-color: #007ACC;
         color: #fff;
         text-decoration: none;
-        border-radius: 30px; /* Rounded corners for a softer look */
+        border-radius: 30px;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
       }
-
       .center-buttons .button:hover {
-        background-color: #007489;
-        transform: scale(1.1); /* Gentle scale-up effect */
+        background-color: #005999;
+        transform: scale(1.1);
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
       }
     </style>
@@ -54,7 +66,6 @@
   <body class="is-preload">
     <!-- Page Wrapper -->
     <div id="page-wrapper">
-
       <!-- Header (Menu remains the same) -->
       <header id="header">
         <h1><a href="index.html">Kevin Cardone</a></h1>
@@ -74,8 +85,18 @@
         </nav>
       </header>
 
-      <!-- Main Content: Two Big Buttons for CV -->
+      <!-- Main Content -->
       <article id="main">
+        <!-- Title Section: Compact with Black Background -->
+        <section class="wrapper style5 title-section">
+          <div class="inner">
+            <header class="major">
+              <h2>If you are a potential employer or are interested in developing a business project with me, please feel free to view or download my resume as to better evaluate whether I would be a good fit for your business or project idea.</h2>
+            </header>
+          </div>
+        </section>
+
+        <!-- Buttons Section: Black to Grey Gradient Background -->
         <section class="wrapper style5 full-bg">
           <div class="inner center-buttons">
             <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
