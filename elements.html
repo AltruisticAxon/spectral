@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <style>
-      /* Updated styling for the central CV buttons section */
+      /* Updated styling for the central CV buttons section with heading */
       .full-bg {
         background: linear-gradient(135deg, #74ebd5, #ACB6E5);
         padding: 120px 0; /* Increased padding for improved balance */
@@ -20,6 +20,18 @@
         right: 50%;
         margin-left: -50vw;
         margin-right: -50vw;
+      }
+
+      /* New heading styling for the resume section inside the gradient background */
+      .full-bg header.major {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      .full-bg header.major h2 {
+        font-size: 2rem;
+        color: #003366;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        line-height: 1.4;
       }
 
       .center-buttons {
@@ -74,12 +86,17 @@
         </nav>
       </header>
 
-      <!-- Main Content: Two Big Buttons for CV -->
+      <!-- Main Content: Heading and Two Big Buttons for CV -->
       <article id="main">
         <section class="wrapper style5 full-bg">
-          <div class="inner center-buttons">
-            <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
-            <a href="assets/CVPDF.pdf" download class="button">Download CV</a>
+          <div class="inner">
+            <header class="major">
+              <h2>If you are a potential employer or are interested in developing a business project with me, please feel free to view or download my resume as to better evaluate whether I would be a good fit for your business or project idea.</h2>
+            </header>
+            <div class="center-buttons">
+              <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
+              <a href="assets/CVPDF.pdf" download class="button">Download CV</a>
+            </div>
           </div>
         </section>
       </article>
