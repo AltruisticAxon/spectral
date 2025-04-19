@@ -9,23 +9,24 @@
       <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <style>
-      /* Buttons Section Styling: Adjusted Position and Compact Section Size */
+      /* Buttons Section Styling: Full Width and Vertically Centered */
       .full-bg {
-        background: #fff !important; /* White background covers the entire section */
-        padding: 10px 0; /* Reduced vertical padding for a compact section */
-        margin-top: 50px; /* Push the section further down */
-        border-radius: 0; /* Remove rounded corners */
-        width: 100%; /* Ensure full width */
+        background: #fff; /* White background covers entire section */
+        display: flex; /* Flexbox for centering */
+        flex-direction: column; /* Ensure vertical alignment */
+        justify-content: center; /* Vertically center content */
+        align-items: center; /* Horizontally center content */
+        height: 50vh; /* Adjust section height to 50% of viewport */
+        margin: 0; /* Remove margins */
         text-align: center; /* Center align the content */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
       }
       .center-buttons .button {
-        display: inline-flex; /* Ensures buttons align side-by-side */
+        display: inline-flex; /* Buttons side-by-side alignment */
         align-items: center;
         justify-content: center;
-        margin: 0 15px; /* Add spacing between buttons */
-        padding: 10px 30px; /* Adjust padding for smaller button size */
-        font-size: 1.1rem; /* Slightly smaller font size */
+        margin: 10px; /* Add spacing between buttons */
+        padding: 15px 40px; /* Balanced padding for buttons */
+        font-size: 1.2rem; /* Slightly smaller font size */
         font-weight: bold;
         /* Blue gradient for the button */
         background: linear-gradient(to bottom, #007ACC, #005999);
@@ -47,7 +48,7 @@
   <body class="is-preload">
     <!-- Page Wrapper -->
     <div id="page-wrapper">
-      <!-- Header (Menu remains the same) -->
+      <!-- Header -->
       <header id="header">
         <h1><a href="index.html">Kevin Cardone</a></h1>
         <nav id="nav">
@@ -68,7 +69,7 @@
       
       <!-- Main Content -->
       <article id="main">
-        <!-- Buttons Section: Compact with Full Background -->
+        <!-- Buttons Section: Vertically Centered -->
         <section class="wrapper style5 full-bg">
           <div class="center-buttons">
             <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
@@ -77,27 +78,27 @@
         </section>
       </article>
       
-      <!-- "About Site" Section (Same as your original layout) -->
-      <section id="about-site-custom" class="wrapper style2 special" style="margin-top: 0 !important; padding-top: 0; border: none;">
+      <!-- About Site Section -->
+      <section id="about-site-custom" class="wrapper style2 special" style="margin-top: 0; padding-top: 0; border: none;">
         <div class="inner">
-          <header class="major" style="margin-bottom: 10px;">
+          <header class="major">
             <h2>About Site</h2>
           </header>
           <p>Kevin Cardone is an HR Master graduate with an undergraduate degree in Business Management. With extensive experience as an HR Officer and specialist in recruitment, Kevin has a proven track record in supporting organizational growth and talent development.</p>
-          <p>Learn more about Kevin, his expertise in HR and recruitment, and his approach to fostering professional growth. If you're ready to discuss your personal or business needs, reach out via email at <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a> or by using <a href="mailto:kevincardone99@gmail.com">this contact form</a>.</p>
+          <p>If you're ready to discuss your personal or business needs, reach out via email at <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a>.</p>
         </div>
       </section>
       
-      <!-- Footer (Same as your original layout) -->
+      <!-- Footer -->
       <footer id="footer">
         <ul class="icons">
-          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+          <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
         </ul>
         <ul class="copyright">
-          <li>&copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
+          <li>&copy; 2025 Kevin Garcia Cardone</li>
           <li><a href="mailto:kevincardone99@gmail.com">Contact me</a></li>
         </ul>
       </footer>
