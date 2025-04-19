@@ -20,14 +20,15 @@
         right: 50%;
         margin-left: -50vw;
         margin-right: -50vw;
-        display: flex; /* Use flexbox */
-        flex-direction: column; /* Ensure buttons stack vertically */
-        justify-content: center; /* Center vertically */
-        align-items: center; /* Center horizontally */
+        display: flex; /* Flexbox for horizontal alignment */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
       }
       .center-buttons .button {
-        display: block; /* Ensure block-level to stack vertically */
-        margin: 20px 0; /* Adjust vertical spacing */
+        display: inline-flex; /* Ensures buttons align side-by-side */
+        align-items: center;
+        justify-content: center;
+        margin: 0 15px; /* Adds spacing between buttons */
         padding: 20px 50px;
         font-size: 1.5rem;
         font-weight: bold;
@@ -72,7 +73,7 @@
       
       <!-- Main Content -->
       <article id="main">
-        <!-- Buttons Section: Stacked Alignment with White Background -->
+        <!-- Buttons Section: Horizontal Alignment with White Background -->
         <section class="wrapper style5 full-bg">
           <div class="center-buttons">
             <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
