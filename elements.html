@@ -9,28 +9,22 @@
       <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <style>
-      /* Buttons Section Styling: Reduced Height with White Background */
+      /* Buttons Section Styling: Wrapped Around Buttons */
       .full-bg {
         background: #fff !important; /* White background */
-        padding: 40px 0; /* Reduced padding for compact size */
-        border-radius: 15px;
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 10px 20px; /* Minimal padding to tightly wrap around buttons */
+        border-radius: 15px; /* Rounded corners */
+        max-width: 600px; /* Limit maximum width of the section */
+        margin: 0 auto; /* Center the section horizontally */
+        display: inline-block; /* Adjust the height and width automatically */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+        text-align: center; /* Center align the content */
       }
       .center-buttons .button {
-        display: inline-flex; /* Ensures buttons align side-by-side */
-        align-items: center;
-        justify-content: center;
-        margin: 0 15px; /* Adds spacing between buttons */
-        padding: 20px 50px;
-        font-size: 1.5rem;
+        display: inline-block; /* Keeps buttons inline but allows wrapping */
+        margin: 10px; /* Adds space between buttons */
+        padding: 15px 40px; /* Adjust padding to make buttons smaller */
+        font-size: 1.2rem; /* Slightly reduce button font size */
         font-weight: bold;
         /* Blue gradient for the button */
         background: linear-gradient(to bottom, #007ACC, #005999);
@@ -73,7 +67,7 @@
       
       <!-- Main Content -->
       <article id="main">
-        <!-- Buttons Section: Reduced Height with White Background -->
+        <!-- Buttons Section: Wrapped Around Buttons -->
         <section class="wrapper style5 full-bg">
           <div class="center-buttons">
             <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
