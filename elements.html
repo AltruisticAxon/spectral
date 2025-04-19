@@ -3,7 +3,7 @@
   <head>
     <title>Resume - Kevin Cardone</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
       <link rel="stylesheet" href="assets/css/noscript.css" />
@@ -20,18 +20,20 @@
         right: 50%;
         margin-left: -50vw;
         margin-right: -50vw;
-      }
-      .center-buttons {
-        text-align: center;
+        display: flex; /* Flexbox for centering */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
       }
       .center-buttons .button {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin: 20px;
+        margin: 10px 0; /* Adjust spacing between buttons */
         padding: 20px 50px;
         font-size: 1.5rem;
         font-weight: bold;
+        /* Blue gradient for the button */
         background: linear-gradient(to bottom, #007ACC, #005999);
         color: #fff;
         text-decoration: none;
@@ -72,9 +74,9 @@
       
       <!-- Main Content -->
       <article id="main">
-        <!-- Buttons Section: Solid White Background -->
-        <section class="wrapper style5 full-bg">
-          <div class="inner center-buttons">
+        <!-- Buttons Section: Stacked Alignment with White Background -->
+        <section class="wrapper style5 full-bg center-buttons">
+          <div>
             <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
             <a href="assets/CVPDF.pdf" download class="button">Download CV</a>
           </div>
@@ -117,4 +119,3 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-
