@@ -26,7 +26,8 @@
 
       .title-section h2 {
         margin: 0;
-        font-size: 1.8rem;
+        font-size: 1.4rem; /* Reduced font size */
+        line-height: 1.5;
       }
 
       /* Buttons Section Styling */
@@ -67,7 +68,7 @@
         text-align: center;
         background-color: #333;
         color: #fff;
-        padding: 15px 0;
+        padding: 20px 0;
       }
 
       #footer a {
@@ -75,7 +76,7 @@
         text-decoration: none;
       }
 
-      #footer ul {
+      #footer ul.icons {
         list-style: none;
         padding: 0;
         margin: 0;
@@ -83,8 +84,12 @@
         justify-content: center;
       }
 
-      #footer ul li {
+      #footer ul.icons li {
         margin: 0 10px;
+      }
+
+      #footer ul li {
+        margin: 5px 0;
       }
     </style>
   </head>
@@ -110,6 +115,7 @@
 
     <!-- Title Section -->
     <section class="title-section">
+      <br><br> <!-- Page breaks to lower the title -->
       <h2>If you are a potential employer or are interested in developing a business project with me, please feel free to view or download my resume as to better evaluate whether I would be a good fit for your business or project idea.</h2>
     </section>
 
@@ -121,8 +127,14 @@
 
     <!-- Footer -->
     <footer id="footer">
-      <ul>
-        <li>&copy; 2025 Kevin Cardone</li>
+      <ul class="icons">
+        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
         <li><a href="mailto:kevincardone99@gmail.com">Contact me</a></li>
       </ul>
     </footer>
