@@ -11,22 +11,24 @@
     <style>
       /* Main Content Adjustments */
       article#main {
-        padding: 10px 0 !important; /* Forcefully reduce vertical padding */
-        margin: 0 auto !important; /* Center the article on the page */
-        max-width: 800px !important; /* Limit the width for readability */
-        height: auto !important; /* Let the height wrap content tightly */
+        padding: 0 !important; /* Remove vertical padding */
+        margin: 0 !important; /* Remove default margins */
+        height: 100vh; /* Let the article take up the full viewport height */
       }
 
-      /* Buttons Section Styling: Full Width and Vertically Centered */
+      /* Buttons Section Styling: Full-Page White Background */
       .full-bg {
-        background: #fff; /* White background for the section */
+        background: #fff; /* White background covers entire page */
         display: flex; /* Flexbox for centering */
         flex-direction: column; /* Ensure vertical alignment */
         justify-content: center; /* Vertically center content */
         align-items: center; /* Horizontally center content */
-        height: 30vh; /* Reduce section height further */
+        height: 100vh; /* Full-page height */
+        width: 100%; /* Full-page width */
+        margin: 0; /* Remove margins */
         text-align: center; /* Center align the content */
       }
+
       .center-buttons .button {
         display: inline-flex; /* Buttons side-by-side alignment */
         align-items: center;
@@ -44,6 +46,7 @@
         transition: background 0.3s ease, transform 0.2s ease, color 0.2s ease;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
       }
+
       .center-buttons .button:hover {
         background: #fff; /* Match the white background */
         color: #000; /* Black text for contrast */
@@ -76,7 +79,7 @@
       
       <!-- Main Content -->
       <article id="main">
-        <!-- Buttons Section: Compact and Vertically Centered -->
+        <!-- Buttons Section: Full Page White Background -->
         <section class="wrapper style5 full-bg">
           <div class="center-buttons">
             <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
