@@ -13,19 +13,18 @@
       article#main {
         padding: 0 !important; /* Remove vertical padding */
         margin: 0 !important; /* Remove default margins */
-        height: 100vh; /* Let the article take up the full viewport height */
+        height: auto !important; /* Allow height to wrap tightly */
       }
 
-      /* Buttons Section Styling: Full-Page White Background */
+      /* Buttons Section Styling: Shortened Height */
       .full-bg {
-        background: #fff; /* White background covers entire page */
+        background: #fff; /* White background */
         display: flex; /* Flexbox for centering */
         flex-direction: column; /* Ensure vertical alignment */
         justify-content: center; /* Vertically center content */
         align-items: center; /* Horizontally center content */
-        height: 100vh; /* Full-page height */
+        height: 50vh; /* Reduce section height to 50% of the viewport */
         width: 100%; /* Full-page width */
-        margin: 0; /* Remove margins */
         text-align: center; /* Center align the content */
       }
 
@@ -79,7 +78,7 @@
       
       <!-- Main Content -->
       <article id="main">
-        <!-- Buttons Section: Full Page White Background -->
+        <!-- Buttons Section: Shortened and Vertically Centered -->
         <section class="wrapper style5 full-bg">
           <div class="center-buttons">
             <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
