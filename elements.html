@@ -9,110 +9,124 @@
       <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <style>
-      /* Main Content Adjustments */
-      article#main {
-        padding: 0 !important; /* Remove vertical padding */
-        margin: 0 !important; /* Remove default margins */
-        height: auto !important; /* Allow height to wrap tightly */
+      /* General Page Styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
       }
 
-      /* Buttons Section Styling: Shortened Height */
-      .full-bg {
-        background: #fff; /* White background */
-        display: flex; /* Flexbox for centering */
-        flex-direction: column; /* Ensure vertical alignment */
-        justify-content: center; /* Vertically center content */
-        align-items: center; /* Horizontally center content */
-        height: 50vh; /* Reduce section height to 50% of the viewport */
-        width: 100%; /* Full-page width */
-        text-align: center; /* Center align the content */
+      /* Title Section Styling */
+      .title-section {
+        background-color: #007ACC;
+        color: #fff;
+        padding: 30px 15px;
+        text-align: center;
       }
 
-      .center-buttons .button {
-        display: inline-flex; /* Buttons side-by-side alignment */
+      .title-section h2 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+
+      /* Buttons Section Styling */
+      .buttons-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        background-color: #f5f5f5;
+      }
+
+      .buttons-section .button {
+        display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin: 10px; /* Add spacing between buttons */
-        padding: 15px 40px; /* Balanced padding for buttons */
-        font-size: 1.2rem; /* Slightly smaller font size */
+        margin: 15px;
+        padding: 15px 50px;
+        font-size: 1.5rem;
         font-weight: bold;
-        /* Blue gradient for the button */
-        background: linear-gradient(to bottom, #007ACC, #005999);
+        background-color: #007ACC;
         color: #fff;
         text-decoration: none;
         border-radius: 30px;
         cursor: pointer;
-        transition: background 0.3s ease, transform 0.2s ease, color 0.2s ease;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
       }
 
-      .center-buttons .button:hover {
-        background: #fff; /* Match the white background */
-        color: #000; /* Black text for contrast */
+      .buttons-section .button:hover {
+        background-color: #005999;
         transform: scale(1.1);
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
       }
+
+      /* Footer Styling */
+      #footer {
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        padding: 15px 0;
+      }
+
+      #footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      #footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      #footer ul li {
+        margin: 0 10px;
+      }
     </style>
   </head>
-  <body class="is-preload">
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
-      <!-- Header -->
-      <header id="header">
-        <h1><a href="index.html">Kevin Cardone</a></h1>
-        <nav id="nav">
-          <ul>
-            <li class="special">
-              <a href="#menu" class="menuToggle"><span>Menu</span></a>
-              <div id="menu">
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="generic.html">About me</a></li>
-                  <li><a href="elements.html">Resume</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      
-      <!-- Main Content -->
-      <article id="main">
-        <!-- Buttons Section: Shortened and Vertically Centered -->
-        <section class="wrapper style5 full-bg">
-          <div class="center-buttons">
-            <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
-            <a href="assets/CVPDF.pdf" download class="button">Download CV</a>
-          </div>
-        </section>
-      </article>
-      
-      <!-- About Site Section -->
-      <section id="about-site-custom" class="wrapper style2 special" style="margin-top: 0; padding-top: 0; border: none;">
-        <div class="inner">
-          <header class="major">
-            <h2>About Site</h2>
-          </header>
-          <p>Kevin Cardone is an HR Master graduate with an undergraduate degree in Business Management. With extensive experience as an HR Officer and specialist in recruitment, Kevin has a proven track record in supporting organizational growth and talent development.</p>
-          <p>If you're ready to discuss your personal or business needs, reach out via email at <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a>.</p>
-        </div>
-      </section>
-      
-      <!-- Footer -->
-      <footer id="footer">
-        <ul class="icons">
-          <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <h1><a href="index.html">Kevin Cardone</a></h1>
+      <nav id="nav">
+        <ul>
+          <li class="special">
+            <a href="#menu" class="menuToggle"><span>Menu</span></a>
+            <div id="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generic.html">About me</a></li>
+                <li><a href="elements.html">Resume</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
-        <ul class="copyright">
-          <li>&copy; 2025 Kevin Garcia Cardone</li>
-          <li><a href="mailto:kevincardone99@gmail.com">Contact me</a></li>
-        </ul>
-      </footer>
-    </div>
-    
+      </nav>
+    </header>
+
+    <!-- Title Section -->
+    <section class="title-section">
+      <h2>If you are a potential employer or are interested in developing a business project with me, please feel free to view or download my resume as to better evaluate whether I would be a good fit for your business or project idea.</h2>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="buttons-section">
+      <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
+      <a href="assets/CVPDF.pdf" download class="button">Download CV</a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <ul>
+        <li>&copy; 2025 Kevin Cardone</li>
+        <li><a href="mailto:kevincardone99@gmail.com">Contact me</a></li>
+      </ul>
+    </footer>
+
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
