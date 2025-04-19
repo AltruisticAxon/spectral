@@ -9,15 +9,22 @@
       <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <style>
+      /* Main Content Adjustments */
+      article#main {
+        padding: 10px 0 !important; /* Forcefully reduce vertical padding */
+        margin: 0 auto !important; /* Center the article on the page */
+        max-width: 800px !important; /* Limit the width for readability */
+        height: auto !important; /* Let the height wrap content tightly */
+      }
+
       /* Buttons Section Styling: Full Width and Vertically Centered */
       .full-bg {
-        background: #fff; /* White background covers entire section */
+        background: #fff; /* White background for the section */
         display: flex; /* Flexbox for centering */
         flex-direction: column; /* Ensure vertical alignment */
         justify-content: center; /* Vertically center content */
         align-items: center; /* Horizontally center content */
-        height: 50vh; /* Adjust section height to 50% of viewport */
-        margin: 0; /* Remove margins */
+        height: 30vh; /* Reduce section height further */
         text-align: center; /* Center align the content */
       }
       .center-buttons .button {
@@ -69,7 +76,7 @@
       
       <!-- Main Content -->
       <article id="main">
-        <!-- Buttons Section: Vertically Centered -->
+        <!-- Buttons Section: Compact and Vertically Centered -->
         <section class="wrapper style5 full-bg">
           <div class="center-buttons">
             <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
