@@ -11,141 +11,156 @@
     <style>
       /* General Page Styling */
       body {
-        font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #007ACC, #005999); /* Modern gradient background */
+        color: #fff;
       }
 
-      /* Buttons Section Styling */
-      .buttons-section {
+      /* Menu Styling */
+      header#header {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      header#header h1 {
+        font-size: 1.8rem;
+        margin: 0;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      nav#nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav#nav ul li {
+        margin: 0 15px;
+      }
+
+      nav#nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s;
+      }
+
+      nav#nav ul li a:hover {
+        color: #FFD700; /* Gold color for hover effect */
+      }
+
+      /* Main Section Styling */
+      .main-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 70vh;
-        background-color: #f5f5f5; /* Light grey background */
-        margin: 0; /* Remove any margin between sections */
+        height: 80vh; /* Make the section take up most of the screen */
+        text-align: center;
       }
 
-      .buttons-section .button {
+      .main-section h2 {
+        margin: 0 0 20px;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Button Styling */
+      .main-section .button {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin: 15px;
-        padding: 15px 50px;
-        font-size: 1.5rem;
+        margin: 10px;
+        padding: 15px 40px;
+        font-size: 1.2rem;
         font-weight: bold;
-        background-color: #007ACC;
+        background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
         color: #fff;
+        border: 2px solid #fff;
+        border-radius: 25px;
         text-decoration: none;
-        border-radius: 30px;
         cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: background 0.3s, color 0.3s, transform 0.2s;
       }
 
-      .buttons-section .button:hover {
-        background-color: #005999;
+      .main-section .button:hover {
+        background: #FFD700; /* Gold for hover effect */
+        color: #000;
         transform: scale(1.1);
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-      }
-
-      /* About Site Section Styling */
-      #about-site-custom {
-        background-color: #f5f5f5; /* Grey background */
-        padding: 40px 15px;
-        text-align: center;
-        margin: 0; /* Remove unnecessary spacing */
-      }
-
-      #about-site-custom .inner h2 {
-        color: #333; /* Dark grey heading */
-        margin-bottom: 10px;
-      }
-
-      #about-site-custom p {
-        color: #555; /* Slightly lighter grey for text */
       }
 
       /* Footer Styling */
-      #footer {
+      footer#footer {
         text-align: center;
-        background-color: #333;
-        color: #fff;
-        padding: 20px 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
       }
 
-      #footer a {
-        color: #fff;
-        text-decoration: none;
-      }
-
-      #footer ul.icons {
+      footer#footer ul {
         list-style: none;
         padding: 0;
-        margin: 0;
+        margin: 10px 0 0;
         display: flex;
         justify-content: center;
       }
 
-      #footer ul.icons li {
+      footer#footer ul li {
         margin: 0 10px;
       }
 
-      #footer ul li {
-        margin: 5px 0;
+      footer#footer ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+
+      footer#footer ul li a:hover {
+        color: #FFD700; /* Gold hover effect */
+      }
+
+      footer#footer p {
+        color: #fff;
+        margin: 10px 0 0;
+        font-size: 0.9rem;
       }
     </style>
   </head>
   <body>
     <!-- Header -->
     <header id="header">
-      <h1><a href="index.html">Kevin Cardone</a></h1>
+      <h1>Kevin Cardone</h1>
       <nav id="nav">
         <ul>
-          <li class="special">
-            <a href="#menu" class="menuToggle"><span>Menu</span></a>
-            <div id="menu">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="generic.html">About me</a></li>
-                <li><a href="elements.html">Resume</a></li>
-              </ul>
-            </div>
-          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="generic.html">About me</a></li>
+          <li><a href="elements.html">Resume</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Buttons Section -->
-    <section class="buttons-section">
+    <!-- Main Section -->
+    <section class="main-section">
+      <h2>Explore My Professional Background</h2>
       <a href="assets/CVPDF.pdf" target="_blank" class="button">View CV</a>
       <a href="assets/CVPDF.pdf" download class="button">Download CV</a>
     </section>
 
-    <!-- About Site Section -->
-    <section id="about-site-custom" class="wrapper style2 special">
-      <div class="inner">
-        <header class="major">
-          <h2>About Site</h2>
-        </header>
-        <p>Kevin Cardone is an HR Master graduate with an undergraduate degree in Business Management. With extensive experience as an HR Officer and specialist in recruitment, Kevin has a proven track record in supporting organizational growth and talent development.</p>
-        <p>Learn more about Kevin, his expertise in HR and recruitment, and his approach to fostering professional growth. If you're ready to discuss your personal or business needs, reach out via email at <a href="mailto:kevincardone99@gmail.com">kevincardone99@gmail.com</a> or by using <a href="mailto:kevincardone99@gmail.com">this contact form</a>.</p>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer id="footer">
-      <ul class="icons">
-        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-        <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+      <ul>
+        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg">Twitter</a></li>
+        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg">Facebook</a></li>
+        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg">Instagram</a></li>
+        <li><a href="mailto:kevincardone99@gmail.com">Email</a></li>
       </ul>
-      <ul class="copyright">
-        <li>&copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
-        <li><a href="mailto:kevincardone99@gmail.com">Contact me</a></li>
-      </ul>
+      <p>&copy; 2025 Kevin Garcia Cardone. All rights reserved.</p>
     </footer>
 
     <!-- Scripts -->
