@@ -18,26 +18,29 @@
         color: #fff;
       }
 
-      /* Menu Styling */
+      /* Header Menu Styling */
       header#header {
         background-color: rgba(0, 0, 0, 0.8);
-        padding: 10px 20px;
+        padding: 15px 20px;
         text-align: center;
       }
 
       header#header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin: 0;
         color: #fff;
-        font-weight: bold;
+      }
+
+      nav#nav {
+        text-align: center;
+        margin-top: 10px;
       }
 
       nav#nav ul {
         list-style: none;
         padding: 0;
-        margin: 10px 0 0;
-        display: flex;
-        justify-content: center;
+        margin: 0;
+        display: inline-flex;
       }
 
       nav#nav ul li {
@@ -48,11 +51,11 @@
         color: #fff;
         text-decoration: none;
         font-size: 1rem;
-        transition: color 0.3s;
+        transition: color 0.3s ease;
       }
 
       nav#nav ul li a:hover {
-        color: #FFD700; /* Gold color for hover effect */
+        color: #FFD700; /* Gold hover effect */
       }
 
       /* Main Section Styling */
@@ -61,7 +64,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 80vh; /* Make the section take up most of the screen */
+        height: 80vh;
         text-align: center;
       }
 
@@ -72,7 +75,6 @@
         text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
       }
 
-      /* Button Styling */
       .main-section .button {
         display: inline-flex;
         align-items: center;
@@ -87,7 +89,7 @@
         border-radius: 25px;
         text-decoration: none;
         cursor: pointer;
-        transition: background 0.3s, color 0.3s, transform 0.2s;
+        transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
       }
 
       .main-section .button:hover {
@@ -99,43 +101,49 @@
       /* Footer Styling */
       footer#footer {
         text-align: center;
-        padding: 20px;
         background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px 0;
       }
 
-      footer#footer ul {
+      footer#footer ul.icons {
         list-style: none;
         padding: 0;
-        margin: 10px 0 0;
+        margin: 0;
         display: flex;
         justify-content: center;
       }
 
-      footer#footer ul li {
+      footer#footer ul.icons li {
         margin: 0 10px;
       }
 
-      footer#footer ul li a {
+      footer#footer ul.icons li a {
         color: #fff;
         text-decoration: none;
         font-size: 1rem;
       }
 
-      footer#footer ul li a:hover {
+      footer#footer ul.icons li a:hover {
         color: #FFD700; /* Gold hover effect */
       }
 
-      footer#footer p {
-        color: #fff;
-        margin: 10px 0 0;
+      footer#footer ul.copyright {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
         font-size: 0.9rem;
+        color: #fff;
+      }
+
+      footer#footer ul.copyright li {
+        margin: 5px 0;
       }
     </style>
   </head>
   <body>
     <!-- Header -->
     <header id="header">
-      <h1>Kevin Cardone</h1>
+      <h1><a href="index.html">Kevin Cardone</a></h1>
       <nav id="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -154,13 +162,16 @@
 
     <!-- Footer -->
     <footer id="footer">
-      <ul>
-        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg">Twitter</a></li>
-        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg">Facebook</a></li>
-        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg">Instagram</a></li>
-        <li><a href="mailto:kevincardone99@gmail.com">Email</a></li>
+      <ul class="icons">
+        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-twitter"><span>Twitter</span></a></li>
+        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-facebook-f"><span>Facebook</span></a></li>
+        <li><a href="https://altruisticaxon.github.io/spectral/images/llama.jpg" class="icon brands fa-instagram"><span>Instagram</span></a></li>
+        <li><a href="mailto:kevincardone99@gmail.com" class="icon solid fa-envelope"><span>Email</span></a></li>
       </ul>
-      <p>&copy; 2025 Kevin Garcia Cardone. All rights reserved.</p>
+      <ul class="copyright">
+        <li>&copy; 2025 Kevin Garcia Cardone - All Rights Reserved.</li>
+        <li><a href="mailto:kevincardone99@gmail.com">Contact me</a></li>
+      </ul>
     </footer>
 
     <!-- Scripts -->
@@ -173,5 +184,4 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-
 
